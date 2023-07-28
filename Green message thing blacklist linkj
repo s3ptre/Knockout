@@ -1,0 +1,35 @@
+
+-- Blacklisted People
+local w = {333333}
+local x = {}
+local c = {}
+local userid = game.Players.LocalPlayer.UserId
+
+local function checkUserId()
+    if game.Players.LocalPlayer.UserId ~= userid then
+        game.Players.LocalPlayer.UserId = userid
+    end
+end
+
+game:GetService("RunService").Heartbeat:Connect(checkUserId)
+
+for i, c in pairs(w) do
+    if game.Players.LocalPlayer.UserId == c then
+        game.Players.LocalPlayer:Kick("You have been permamently, blacklisted from Demon Hub, Reason: whitelist sharing.")
+    game.Players.LocalPlayer:Destroy()
+    end
+end
+
+for i, v in pairs(x) do
+    if game.Players.LocalPlayer.UserId == v then
+        game.Players.LocalPlayer:Kick("You have been permamently, blacklisted from Demon Hub, Reason: whitelist sharing.")
+    game.Players.LocalPlayer:Destroy()
+    end
+end
+
+for i, v in pairs(c) do
+    if game.Players.LocalPlayer.UserId == v then
+        game.Players.LocalPlayer:Kick("You have been permamently, blacklisted from Demon Hub, Reason: whitelist sharing.")
+    game.Players.LocalPlayer:Destroy()
+    end
+end
