@@ -1,319 +1,351 @@
---mika script
+    --mika script
 
-local function hexToColor3(hex)
-    hex = hex:gsub("#","") -- Remove # if it exists
-    local r = tonumber(hex:sub(1,2), 16) / 255
-    local g = tonumber(hex:sub(3,4), 16) / 255
-    local b = tonumber(hex:sub(5,6), 16) / 255
-    return Color3.new(r, g, b)
-end
-
--- Create the ScreenGui
-local screenGui = Instance.new("ScreenGui")
-screenGui.Name = "ToggleGUI"
-screenGui.Parent = game.CoreGui
-
--- Create the background for the Frame
-local background = Instance.new("Frame")
-background.Size = UDim2.new(1, 0, 1, 0)
-background.BackgroundTransparency = 0.5  -- Dark gray background initially
-background.Parent = frame
-
--- Create the Frame
-local frame = Instance.new("Frame")
-frame.Size = UDim2.new(0, 300, 0, 300)  -- Adjusted height to accommodate additional button
-frame.Position = UDim2.new(0.5, -150, 0.5, -150)
-frame.BackgroundTransparency = 0.4 -- Set to transparent to allow rainbow effect behind text farah
-frame.Parent = screenGui
-
--- Create the background for the Frame
-local background = Instance.new("Frame")
-background.Size = UDim2.new(1, 0, 1, 0)
-background.BackgroundColor3 = hexToColor3("#cfcfcf")  -- Dark gray background initially
-background.Parent = frame
-
--- Add UICorner to the Frame's background
-local backgroundCorner = Instance.new("UICorner")
-backgroundCorner.CornerRadius = UDim.new(0, 10)
-backgroundCorner.Parent = background 
-
--- Rainbow animation for the Frame background
-local function rainbowBackground()
-    local hue = 0
-    while true do
-        hue = (hue + 1) % 360
-        background.BackgroundColor3 = Color3.fromHSV(hue / 360, 1, 1)
-        wait(0)  -- Adjust speed of color change here (lower value = faster)
+    local function hexToColor3(hex)
+        hex = hex:gsub("#","") -- Remove # if it exists
+        local r = tonumber(hex:sub(1,2), 16) / 255
+        local g = tonumber(hex:sub(3,4), 16) / 255
+        local b = tonumber(hex:sub(5,6), 16) / 255
+        return Color3.new(r, g, b)
     end
-end
 
-spawn(rainbowBackground)  -- Start the rainbow animation
+    -- Create the ScreenGui
+    local screenGui = Instance.new("ScreenGui")
+    screenGui.Name = "ToggleGUI"
+    screenGui.Parent = game.CoreGui
 
--- Create the Toggle Button for Autofarm
-local toggleButton = Instance.new("TextButton")
-toggleButton.Size = UDim2.new(0, 100, 0, 50)
-toggleButton.Position = UDim2.new(0.5, -50, 0.3, -25)
-toggleButton.Text = "Autofarm?"
-toggleButton.BackgroundColor3 = hexToColor3("#b38aff")
-toggleButton.Parent = frame
+    -- Create the background for the Frame
+    local background = Instance.new("Frame")
+    background.Size = UDim2.new(1, 0, 1, 0)
+    background.BackgroundTransparency = 0.5  -- Dark gray background initially 
+    background.Parent = frame
 
--- Add UICorner to the Toggle Button
-local toggleButtonCorner = Instance.new("UICorner")
-toggleButtonCorner.CornerRadius = UDim.new(0, 20)
-toggleButtonCorner.Parent = toggleButton
+    -- Create the Frame
+    local frame = Instance.new("Frame")
+    frame.Size = UDim2.new(0, 300, 0, 300)  -- Adjusted height to accommodate additional button
+    frame.Position = UDim2.new(0.5, -150, 0.5, -150)
+    frame.BackgroundTransparency = 0.4 -- Set to transparent to allow rainbow effect behind text farah
+    frame.Parent = screenGui
 
-local isToggled = false
-local autoFireConnection = nil  
+    -- Create the background for the Frame
+    local background = Instance.new("Frame")
+    background.Size = UDim2.new(1, 0, 1, 0)
+    background.BackgroundColor3 = hexToColor3("#cfcfcf")  -- Dark gray background initially
+    background.Parent = frame
 
--- Function to execute when Toggle button is clicked
-local function onToggleButtonClicked()
-    isToggled = not isToggled
-    if isToggled then
-        toggleButton.Text = "Pause ⏸️"
-        toggleButton.BackgroundColor3 = hexToColor3("#00FF00")  -- Green color for toggled state autofarming 1000
-        
-        -- Set initial values and start autoFire
-        getgenv().fr7 = true
-        getgenv().mika = 6000
-        getgenv().mikaa = true
-        
-        -- Get local player and RunService
-        local plr = game.Players.LocalPlayer
-        local RunService = game:GetService("RunService")
-        
-        -- Function to fire ExpRemote in batches
-        local function autoFire()
-            if plr.Character then
-                local tool = plr.Character:FindFirstChildOfClass("Tool")
-                if tool and tool.Name ~= "Tnt" and tool:FindFirstChild("ExpRemote") then
-                    local expRemote = tool.ExpRemote
-                    local numFires = getgenv().mika
-                    local batchSize = 20  -- Number of fires per batch
-                    local numBatches = math.ceil(numFires / batchSize)
-                    
-                    for i = 1, numBatches do
-                        local args = {}
-                        local firesThisBatch = math.min(batchSize, numFires - (i - 1) * batchSize)
-                        for j = 1, firesThisBatch do
-                            table.insert(args, nil)  -- Add whatever arguments needed here
+    -- Add UICorner to the Frame's background
+    local backgroundCorner = Instance.new("UICorner")
+    backgroundCorner.CornerRadius = UDim.new(0, 10)
+    backgroundCorner.Parent = background 
+
+    -- Rainbow animation for the Frame background
+    local function rainbowBackground()
+        local hue = 0
+        while true do
+            hue = (hue + 1) % 360
+            background.BackgroundColor3 = Color3.fromHSV(hue / 360, 1, 1)
+            wait(0)  -- Adjust speed of color change here (lower value = faster)
+        end
+    end
+
+    spawn(rainbowBackground)  -- Start the rainbow animation
+
+    -- Create the Toggle Button for Autofarm
+    local toggleButton = Instance.new("TextButton")
+    toggleButton.Size = UDim2.new(0, 100, 0, 50)
+    toggleButton.Position = UDim2.new(0.5, -50, 0.3, -25)
+    toggleButton.Text = "Autofarm?"
+    toggleButton.BackgroundColor3 = hexToColor3("#b38aff")
+    toggleButton.Parent = frame
+
+    -- Add UICorner to the Toggle Button
+    local toggleButtonCorner = Instance.new("UICorner")
+    toggleButtonCorner.CornerRadius = UDim.new(0, 20)
+    toggleButtonCorner.Parent = toggleButton
+
+    local isToggled = false
+    local autoFireConnection = nil  
+
+    -- Function to execute when Toggle button is clicked
+    local function onToggleButtonClicked()
+        isToggled = not isToggled
+        if isToggled then
+            toggleButton.Text = "Pause ⏸️"
+            toggleButton.BackgroundColor3 = hexToColor3("#00FF00")  -- Green color for toggled state autofarming 1000
+            
+            -- Set initial values and start autoFire
+            getgenv().fr7 = true
+            getgenv().mika = 6000
+            getgenv().mikaa = true
+            
+            -- Get local player and RunService
+            local plr = game.Players.LocalPlayer
+            local RunService = game:GetService("RunService")
+            
+            -- Function to fire ExpRemote in batches
+            local function autoFire()
+                if plr.Character then
+                    local tool = plr.Character:FindFirstChildOfClass("Tool")
+                    if tool and tool.Name ~= "Tnt" and tool:FindFirstChild("ExpRemote") then
+                        local expRemote = tool.ExpRemote
+                        local numFires = getgenv().mika
+                        local batchSize = 20  -- Number of fires per batch
+                        local numBatches = math.ceil(numFires / batchSize)
+                        
+                        for i = 1, numBatches do
+                            local args = {}
+                            local firesThisBatch = math.min(batchSize, numFires - (i - 1) * batchSize)
+                            for j = 1, firesThisBatch do
+                                table.insert(args, nil)  -- Add whatever arguments needed here
+                            end
+                            expRemote:FireServer(unpack(args))
                         end
-                        expRemote:FireServer(unpack(args))
                     end
                 end
             end
-        end
-        
-        -- Connect autoFire function to RenderStepped for continuous firing
-        autoFireConnection = RunService.RenderStepped:Connect(function()
-            pcall(autoFire)
-        end)
-        
-        -- Monitor and adjust mikaa based on pingval text
-        spawn(function()
-            while isToggled do
-                wait(1)
-                if getgenv().fr7 and getgenv().pingval > 1000 then
-                    getgenv().mikaa = false
-                elseif getgenv().fr7 and getgenv().pingval < 1000 then
-                    getgenv().mikaa = true
+            
+            -- Connect autoFire function to RenderStepped for continuous firing
+            autoFireConnection = RunService.RenderStepped:Connect(function()
+                pcall(autoFire)
+            end)
+            
+            -- Monitor and adjust mikaa based on pingval text
+            spawn(function()
+                while isToggled do
+                    wait(1)
+                    if getgenv().fr7 and getgenv().pingval > 1000 then
+                        getgenv().mikaa = false
+                    elseif getgenv().fr7 and getgenv().pingval < 1000 then
+                        getgenv().mikaa = true
+                    end
                 end
+            end)
+            
+        else
+            toggleButton.Text = "Start ▷"
+            toggleButton.BackgroundColor3 = hexToColor3("#c40034")  -- Original color for untoggled state text
+            
+            -- Execute your code when untoggled (stop the script)
+            getgenv().fr7 = false
+            if autoFireConnection then
+                autoFireConnection:Disconnect()
+                autoFireConnection = nil
             end
-        end)
-        
-    else
-        toggleButton.Text = "Start ▷"
-        toggleButton.BackgroundColor3 = hexToColor3("#c40034")  -- Original color for untoggled state text
-        
-        -- Execute your code when untoggled (stop the script)
-        getgenv().fr7 = false
-        if autoFireConnection then
-            autoFireConnection:Disconnect()
-            autoFireConnection = nil
         end
     end
-end
 
--- Connect the function to the Toggle button click event
-toggleButton.MouseButton1Click:Connect(onToggleButtonClicked)
+    -- Connect the function to the Toggle button click event
+    toggleButton.MouseButton1Click:Connect(onToggleButtonClicked)
 
--- Create the new Toggle Button for provided script
-local newToggleButton = Instance.new("TextButton")
-newToggleButton.Size = UDim2.new(0, 100, 0, 50)
-newToggleButton.Position = UDim2.new(0.5, -50, 0.7, -25)
-newToggleButton.Text = "New Script?"
-newToggleButton.BackgroundColor3 = hexToColor3("#b38aff")
-newToggleButton.Parent = frame
+    -- Create the new Toggle Button for provided script
+    local newToggleButton = Instance.new("TextButton")
+    newToggleButton.Size = UDim2.new(0, 100, 0, 50)
+    newToggleButton.Position = UDim2.new(0.5, -50, 0.7, -25)
+    newToggleButton.Text = "New Script?"
+    newToggleButton.BackgroundColor3 = hexToColor3("#b38aff")
+    newToggleButton.Parent = frame
 
--- Add UICorner to the new Toggle Button
-local newToggleButtonCorner = Instance.new("UICorner")
-newToggleButtonCorner.CornerRadius = UDim.new(0, 20)
-newToggleButtonCorner.Parent = newToggleButton
+    -- Add UICorner to the new Toggle Button
+    local newToggleButtonCorner = Instance.new("UICorner")
+    newToggleButtonCorner.CornerRadius = UDim.new(0, 20)
+    newToggleButtonCorner.Parent = newToggleButton
 
-local isNewScriptToggled = false
-local newScriptConnection = nil  
+    local isNewScriptToggled = false
+    local newScriptConnection = nil  
 
--- Function to execute when the new Toggle button is clicked
-local function onNewToggleButtonClicked()
-    isNewScriptToggled = not isNewScriptToggled
-    if isNewScriptToggled then
-        newToggleButton.Text = "Stop ⏸️"
-        newToggleButton.BackgroundColor3 = hexToColor3("#00FF00")  -- Green color for toggled state
-        
-        -- Set initial values and start autoFire
-        getgenv().fr7 = true
-        getgenv().mika = 290
-        getgenv().mikaa = true
-        
-        -- Get local player and RunService
-        local plr = game.Players.LocalPlayer
-        local RunService = game:GetService("RunService")
-        
-        -- Function to fire ExpRemote in batches
-        local function autoFire()
-            if plr.Character then
-                local tool = plr.Character:FindFirstChildOfClass("Tool")
-                if tool and tool.Name ~= "Tnt" and tool:FindFirstChild("ExpRemote") then
-                    local expRemote = tool.ExpRemote
-                    local numFires = getgenv().mika
-                    local batchSize = 20  -- Number of fires per batch
-                    local numBatches = math.ceil(numFires / batchSize)
-                    
-                    for i = 1, numBatches do
-                        local args = {}
-                        local firesThisBatch = math.min(batchSize, numFires - (i - 1) * batchSize)
-                        for j = 1, firesThisBatch do
-                            table.insert(args, nil)  -- Add whatever arguments needed here slow
+    -- Function to execute when the new Toggle button is clicked
+    local function onNewToggleButtonClicked()
+        isNewScriptToggled = not isNewScriptToggled
+        if isNewScriptToggled then
+            newToggleButton.Text = "Stop ⏸️"
+            newToggleButton.BackgroundColor3 = hexToColor3("#00FF00")  -- Green color for toggled state
+            
+            -- Set initial values and start autoFire
+            getgenv().fr7 = true
+            getgenv().mika = 290
+            getgenv().mikaa = true
+            
+            -- Get local player and RunService
+            local plr = game.Players.LocalPlayer
+            local RunService = game:GetService("RunService")
+            
+            -- Function to fire ExpRemote in batches
+            local function autoFire()
+                if plr.Character then
+                    local tool = plr.Character:FindFirstChildOfClass("Tool")
+                    if tool and tool.Name ~= "Tnt" and tool:FindFirstChild("ExpRemote") then
+                        local expRemote = tool.ExpRemote
+                        local numFires = getgenv().mika
+                        local batchSize = 20  -- Number of fires per batch
+                        local numBatches = math.ceil(numFires / batchSize)
+                        
+                        for i = 1, numBatches do
+                            local args = {}
+                            local firesThisBatch = math.min(batchSize, numFires - (i - 1) * batchSize)
+                            for j = 1, firesThisBatch do
+                                table.insert(args, nil)  -- Add whatever arguments needed here slow
+                            end
+                            expRemote:FireServer(unpack(args))
                         end
-                        expRemote:FireServer(unpack(args))
                     end
                 end
             end
-        end
-        
-        -- Connect autoFire function to RenderStepped for continuous firing
-        newScriptConnection = RunService.RenderStepped:Connect(function()
-            pcall(autoFire)
-        end)
-        
-        -- Monitor and adjust mikaa based on pingval text
-        spawn(function()
-            while isNewScriptToggled do
-                wait(1)
-                if getgenv().fr7 and getgenv().pingval > 1000 then
-                    getgenv().mikaa = false
-                elseif getgenv().fr7 and getgenv().pingval < 1000 then
-                    getgenv().mikaa = true
+            
+            -- Connect autoFire function to RenderStepped for continuous firing
+            newScriptConnection = RunService.RenderStepped:Connect(function()
+                pcall(autoFire)
+            end)
+            
+            -- Monitor and adjust mikaa based on pingval text
+            spawn(function()
+                while isNewScriptToggled do
+                    wait(1)
+                    if getgenv().fr7 and getgenv().pingval > 1000 then
+                        getgenv().mikaa = false
+                    elseif getgenv().fr7 and getgenv().pingval < 1000 then
+                        getgenv().mikaa = true
+                    end
                 end
+            end)
+            
+        else
+            newToggleButton.Text = "Start ▷"
+            newToggleButton.BackgroundColor3 = hexToColor3("#c40034")  -- Original color for untoggled state text
+            
+            -- Execute your code when untoggled (stop the script)
+            getgenv().fr7 = false
+            if newScriptConnection then
+                newScriptConnection:Disconnect()
+                newScriptConnection = nil
             end
-        end)
-        
-    else
-        newToggleButton.Text = "Start ▷"
-        newToggleButton.BackgroundColor3 = hexToColor3("#c40034")  -- Original color for untoggled state text
-        
-        -- Execute your code when untoggled (stop the script)
-        getgenv().fr7 = false
-        if newScriptConnection then
-            newScriptConnection:Disconnect()
-            newScriptConnection = nil
         end
     end
-end
 
--- Connect the function to the new Toggle button click event
-newToggleButton.MouseButton1Click:Connect(onNewToggleButtonClicked)
+    -- Connect the function to the new Toggle button click event
+    newToggleButton.MouseButton1Click:Connect(onNewToggleButtonClicked)
 
--- Function to toggle the UI visibility
-local function toggleUI()
-    frame.Visible = not frame.Visible
-end
+    -- Function to toggle the UI visibility
+    local function toggleUI()
+        frame.Visible = not frame.Visible
+    end
 
--- Create the Toggle UI button (outside the frame)
-local toggleUIButton = Instance.new("TextButton")
-toggleUIButton.Size = UDim2.new(0, 100, 0, 50)
-toggleUIButton.Position = UDim2.new(0, 10, 0.5, -25)
-toggleUIButton.Text = "Open/Close"
-toggleUIButton.BackgroundColor3 = hexToColor3("#cfcfcf")  -- Example: Gray button
-toggleUIButton.Parent = screenGui
+    -- Create the Toggle UI button (outside the frame)
+    local toggleUIButton = Instance.new("TextButton")
+    toggleUIButton.Size = UDim2.new(0, 100, 0, 50)
+    toggleUIButton.Position = UDim2.new(0, 10, 0.5, -25)
+    toggleUIButton.Text = "Open/Close"
+    toggleUIButton.BackgroundColor3 = hexToColor3("#cfcfcf")  -- Example: Gray button
+    toggleUIButton.Parent = screenGui
 
--- Add UICorner to the Toggle UI button
-local toggleUIButtonCorner = Instance.new("UICorner")
-toggleUIButtonCorner.CornerRadius = UDim.new(0, 10)
-toggleUIButtonCorner.Parent = toggleUIButton
+    -- Add UICorner to the Toggle UI button
+    local toggleUIButtonCorner = Instance.new("UICorner")
+    toggleUIButtonCorner.CornerRadius = UDim.new(0, 10)
+    toggleUIButtonCorner.Parent = toggleUIButton
 
--- Connect the Toggle UI button to the toggleUI function
-toggleUIButton.MouseButton1Click:Connect(toggleUI)
+    -- Connect the Toggle UI button to the toggleUI function
+    toggleUIButton.MouseButton1Click:Connect(toggleUI)
 
--- Create the Close UI button (next to Toggle UI button)
-local closeUIButton = Instance.new("TextButton")
-closeUIButton.Size = UDim2.new(0, 20, 0, 20)
-closeUIButton.Position = UDim2.new(0, 120, 0.5, -10)
-closeUIButton.Text = "X"
-closeUIButton.BackgroundColor3 = hexToColor3("#ff4242")  -- Example: Gray button 1000 wait
-closeUIButton.Parent = toggleUIButton
+    -- Create the Close UI button (next to Toggle UI button)
+    local closeUIButton = Instance.new("TextButton")
+    closeUIButton.Size = UDim2.new(0, 20, 0, 20)
+    closeUIButton.Position = UDim2.new(0, 120, 0.5, -10)
+    closeUIButton.Text = "X"
+    closeUIButton.BackgroundColor3 = hexToColor3("#ff4242")  -- Example: Gray button 1000 wait
+    closeUIButton.Parent = toggleUIButton
 
--- Add UICorner to the Close UI button
-local closeUIButtonCorner = Instance.new("UICorner")
-closeUIButtonCorner.CornerRadius = UDim.new(1, 0)
-closeUIButtonCorner.Parent = closeUIButton
+    -- Add UICorner to the Close UI button
+    local closeUIButtonCorner = Instance.new("UICorner")
+    closeUIButtonCorner.CornerRadius = UDim.new(1, 0)
+    closeUIButtonCorner.Parent = closeUIButton
 
--- Text label 1
-local authorLabel1 = Instance.new("TextLabel")
-authorLabel1.Size = UDim2.new(1, 0, 0, 20)  -- Size of the label (full width of button, 20 pixels height) 700
-authorLabel1.Position = UDim2.new(0, 0, 0, -20)      
-authorLabel1.BackgroundTransparency = 1  
-authorLabel1.TextColor3 = Color3.new(1, 1, 1)  
-authorLabel1.TextStrokeTransparency = 0.5  
-authorLabel1.TextStrokeColor3 = Color3.new(0, 0, 0)
-authorLabel1.TextSize = 24 
-authorLabel1.Font = Enum.Font.SourceSansBold 
-authorLabel1.Text = "Made by 1003z"  
-authorLabel1.Parent = toggleButton 
-
-
-authorLabel1.AnchorPoint = Vector2.new(0.5, 0)  
-authorLabel1.Position = UDim2.new(0.5, 0, 0, -23) 
-
--- Text label 2 
-local authorLabel2 = Instance.new("TextLabel")
-authorLabel2.Size = UDim2.new(1, 0, 0, 20)  
-authorLabel2.Position = UDim2.new(0, 0, 0, 30)    
-authorLabel2.BackgroundTransparency = 1  
-authorLabel2.TextColor3 = Color3.new(1, 1, 1)  
-authorLabel2.TextStrokeTransparency = 0.5  
-authorLabel2.TextStrokeColor3 = Color3.new(0, 0, 0)  
-authorLabel2.TextSize = 14
-authorLabel2.Font = Enum.Font.SourceSansBold  
-authorLabel2.Text = "slow autofarm (playable)" 
-authorLabel2.Parent = toggleButton 
-
-authorLabel2.AnchorPoint = Vector2.new(0.5, 0)
-authorLabel2.Position = UDim2.new(0.5, 0, 0, 172)   --fr7 position to edit
-
---text label 3
-local authorLabel3 = Instance.new("TextLabel")
-authorLabel3.Size = UDim2.new(1, 0, 0, 20)  
-authorLabel3.Position = UDim2.new(0, 0, 0, 30)    
-authorLabel3.BackgroundTransparency = 1  
-authorLabel3.TextColor3 = Color3.new(1, 1, 1)  
-authorLabel3.TextStrokeTransparency = 0.5  
-authorLabel3.TextStrokeColor3 = Color3.new(0, 0, 0)  
-authorLabel3.TextSize = 14
-authorLabel3.Font = Enum.Font.SourceSansBold  
-authorLabel3.Text = "wait like 10 seconds after stopping so your pings get stable" 
-authorLabel3.Parent = toggleButton 
-
-authorLabel3.AnchorPoint = Vector2.new(0.5, 0)
-authorLabel3.Position = UDim2.new(0.5, 0, 0, 185)
+    -- Text label 1
+    local authorLabel1 = Instance.new("TextLabel")
+    authorLabel1.Size = UDim2.new(1, 0, 0, 20)  -- Size of the label (full width of button, 20 pixels height) 700
+    authorLabel1.Position = UDim2.new(0, 0, 0, -20)      
+    authorLabel1.BackgroundTransparency = 1  
+    authorLabel1.TextColor3 = Color3.new(1, 1, 1)  
+    authorLabel1.TextStrokeTransparency = 0.5  
+    authorLabel1.TextStrokeColor3 = Color3.new(0, 0, 0)
+    authorLabel1.TextSize = 24 
+    authorLabel1.Font = Enum.Font.SourceSansBold 
+    authorLabel1.Text = "Made by 1003z"  
+    authorLabel1.Parent = toggleButton 
 
 
+    authorLabel1.AnchorPoint = Vector2.new(0.5, 0)  
+    authorLabel1.Position = UDim2.new(0.5, 0, 0, -23) 
 
--- destroy X button
-local function destroyUI()
-    frame:Destroy()
-    toggleUIButton:Destroy()
-    closeUIButton:Destroy()
-end
+    -- Text label 2 
+    local authorLabel2 = Instance.new("TextLabel")
+    authorLabel2.Size = UDim2.new(1, 0, 0, 20)  
+    authorLabel2.Position = UDim2.new(0, 0, 0, 30)    
+    authorLabel2.BackgroundTransparency = 1  
+    authorLabel2.TextColor3 = Color3.new(1, 1, 1)  
+    authorLabel2.TextStrokeTransparency = 0.5  
+    authorLabel2.TextStrokeColor3 = Color3.new(0, 0, 0)  
+    authorLabel2.TextSize = 14
+    authorLabel2.Font = Enum.Font.SourceSansBold  
+    authorLabel2.Text = "slow autofarm (playable)" 
+    authorLabel2.Parent = toggleButton 
 
--- destroy X button
-closeUIButton.MouseButton1Click:Connect(destroyUI)
+    authorLabel2.AnchorPoint = Vector2.new(0.5, 0)
+    authorLabel2.Position = UDim2.new(0.5, 0, 0, 172)   --fr7 position to edit
+
+    --text label 3
+    local authorLabel3 = Instance.new("TextLabel")
+    authorLabel3.Size = UDim2.new(1, 0, 0, 20)  
+    authorLabel3.Position = UDim2.new(0, 0, 0, 30)    
+    authorLabel3.BackgroundTransparency = 1  
+    authorLabel3.TextColor3 = Color3.new(1, 1, 1)  
+    authorLabel3.TextStrokeTransparency = 0.5  
+    authorLabel3.TextStrokeColor3 = Color3.new(0, 0, 0)  
+    authorLabel3.TextSize = 14
+    authorLabel3.Font = Enum.Font.SourceSansBold  
+    authorLabel3.Text = "wait like 10 seconds after stopping so your pings get stable" 
+    authorLabel3.Parent = toggleButton 
+
+    authorLabel3.AnchorPoint = Vector2.new(0.5, 0)
+    authorLabel3.Position = UDim2.new(0.5, 0, 0, 185)
+
+    --text label 4
+    local authorLabel4 = Instance.new("TextLabel")
+    authorLabel4.Size = UDim2.new(1, 0, 0, 20)  
+    authorLabel4.Position = UDim2.new(0, 0, 0, 30)    
+    authorLabel4.BackgroundTransparency = 1  
+    authorLabel4.TextColor3 = Color3.new(1, 1, 1)  
+    authorLabel4.TextStrokeTransparency = 0.5  
+    authorLabel4.TextStrokeColor3 = Color3.new(0, 0, 0)  
+    authorLabel4.TextSize = 14
+    authorLabel4.Font = Enum.Font.SourceSansBold  
+    authorLabel4.Text = "↑ Use it on private server ↑" 
+    authorLabel4.Parent = toggleButton 
+
+    authorLabel4.AnchorPoint = Vector2.new(0.5, 0)
+    authorLabel4.Position = UDim2.new(0.5, 0, 0, 48)
+
+    --text label 5
+    local authorLabel5 = Instance.new("TextLabel")
+    authorLabel5.Size = UDim2.new(1, 0, 0, 20)  
+    authorLabel5.Position = UDim2.new(0, 0, 0, 30)    
+    authorLabel5.BackgroundTransparency = 1  
+    authorLabel5.TextColor3 = Color3.new(1, 1, 1)  
+    authorLabel5.TextStrokeTransparency = 0.5  
+    authorLabel5.TextStrokeColor3 = Color3.new(0, 0, 0)  
+    authorLabel5.TextSize = 14
+    authorLabel5.Font = Enum.Font.SourceSansBold  
+    authorLabel5.Text = " because if someone kills you, you cant respawn no more and farm" 
+    authorLabel5.Parent = toggleButton 
+
+    authorLabel5.AnchorPoint = Vector2.new(0.5, 0)
+    authorLabel5.Position = UDim2.new(0.5, 0, 0, 60)
+
+
+
+    -- destroy X button
+    local function destroyUI()
+        frame:Destroy()
+        toggleUIButton:Destroy()
+        closeUIButton:Destroy()
+    end
+
+    -- destroy X button
+    closeUIButton.MouseButton1Click:Connect(destroyUI)
