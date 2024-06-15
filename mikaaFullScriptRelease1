@@ -1,0 +1,152 @@
+local A_1 = "|"-----message here
+local A_2 = "All"
+local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+Event:FireServer(A_1, A_2)
+
+local screenGui = Instance.new("ScreenGui")
+screenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+local welcomeLabel = Instance.new("TextLabel")
+welcomeLabel.Size = UDim2.new(0, 200, 0, 50)
+welcomeLabel.Position = UDim2.new(0.5, -100, 0.5, -25)
+welcomeLabel.Text = "by mikaa || discord: 1003z"
+welcomeLabel.TextColor3 = Color3.new(1, 1, 1)  
+welcomeLabel.BackgroundTransparency = 1 
+welcomeLabel.Font = Enum.Font.SourceSansBold
+welcomeLabel.FontSize = Enum.FontSize.Size48
+welcomeLabel.Parent = screenGui
+
+local function removeWelcomeLabel()
+    wait(0.8)  
+    welcomeLabel:Destroy()
+end
+
+removeWelcomeLabel()
+
+--1003z
+
+
+local Players = game:GetService("Players")
+local Player = Players.LocalPlayer
+local PlayerGui = Player:WaitForChild("PlayerGui")
+local StarterGui = game:GetService("StarterGui")
+local BindableFunction = Instance.new("BindableFunction")
+
+local function hexToColor3(hex)
+    hex = hex:gsub("#","")  
+    local r = tonumber(hex:sub(1,2), 16) / 255
+    local g = tonumber(hex:sub(3,4), 16) / 255
+    local b = tonumber(hex:sub(5,6), 16) / 255
+    return Color3.new(r, g, b)
+end
+
+local function executeScriptFromURL(url)
+    loadstring(game:HttpGet(url))()
+end
+
+local screenGui = Instance.new("ScreenGui")
+screenGui.Parent = PlayerGui
+
+local textBox1 = Instance.new("TextBox")
+textBox1.Size = UDim2.new(0, 200, 0, 50)
+textBox1.Position = UDim2.new(0.5, -150, 0.5, -25)
+textBox1.Visible = false
+textBox1.PlaceholderText = "Enter '1003z' to execute script"
+textBox1.BackgroundColor3 = hexToColor3("#B3B3B3")
+textBox1.Parent = screenGui
+
+local destroyButton1 = Instance.new("TextButton")
+destroyButton1.Size = UDim2.new(0, 50, 0, 50)
+destroyButton1.Position = UDim2.new(0.5, 75, 0.5, -25)
+destroyButton1.Text = "X"
+destroyButton1.TextColor3 = Color3.new(1, 1, 1)
+destroyButton1.BackgroundColor3 = hexToColor3("#FF0000")
+destroyButton1.BorderSizePixel = 0
+destroyButton1.Visible = false
+destroyButton1.Parent = screenGui
+
+destroyButton1.MouseButton1Click:Connect(function()
+    textBox1.Visible = false
+    textBox1:Destroy()
+    destroyButton1.Visible = false
+    destroyButton1:Destroy()
+end)
+
+textBox1.FocusLost:Connect(function(enterPressed)
+    if enterPressed and textBox1.Text == "1003z" then
+        executeScriptFromURL('https://raw.githubusercontent.com/s3ptre/Knockout/main/mikaaAutofarmV2')  
+        textBox1.Visible = false
+        textBox1:Destroy()
+        destroyButton1.Visible = false
+        destroyButton1:Destroy()
+    end
+end)
+
+local textBox2 = Instance.new("TextBox")
+textBox2.Size = UDim2.new(0, 200, 0, 50)
+textBox2.Position = UDim2.new(0.5, -150, 0.5, -25)
+textBox2.Visible = false
+textBox2.PlaceholderText = "Enter 'yok' to execute script"
+textBox2.BackgroundColor3 = hexToColor3("#B3B3B3")
+textBox2.Parent = screenGui
+
+local destroyButton2 = Instance.new("TextButton")
+destroyButton2.Size = UDim2.new(0, 50, 0, 50)
+destroyButton2.Position = UDim2.new(0.5, 75, 0.5, -25)
+destroyButton2.Text = "X"
+destroyButton2.TextColor3 = Color3.new(1, 1, 1)
+destroyButton2.BackgroundColor3 = hexToColor3("#FF0000")
+destroyButton2.BorderSizePixel = 0
+destroyButton2.Visible = false
+destroyButton2.Parent = screenGui
+
+destroyButton2.MouseButton1Click:Connect(function()
+    textBox2.Visible = false
+    textBox2:Destroy()
+    destroyButton2.Visible = false
+    destroyButton2:Destroy()
+end)
+
+textBox2.FocusLost:Connect(function(enterPressed)
+    if enterPressed and textBox2.Text == "yok" then
+        executeScriptFromURL('https://raw.githubusercontent.com/1111-ssss/raw-script/main/knockoutScript')
+        textBox2.Visible = false
+        textBox2:Destroy()
+        destroyButton2.Visible = false
+        destroyButton2:Destroy()
+    end
+end)
+
+BindableFunction.OnInvoke = function(buttonClicked)
+    if buttonClicked == "1003z script" then
+        textBox1.Visible = true
+        textBox1:CaptureFocus()
+        destroyButton1.Visible = true
+        StarterGui:SetCore("SendNotification", {
+            Title = "Enter user",
+            Text = "Enter '1003z' in the TextBox to execute the script",
+            Duration = 5,
+        })
+    elseif buttonClicked == "0qq/sew script" then
+        textBox2.Visible = true
+        textBox2:CaptureFocus()
+        destroyButton2.Visible = true
+        StarterGui:SetCore("SendNotification", {
+            Title = "Enter this smelly person's user",
+            Icon = "rbxthumb://type=AvatarHeadShot&id=1919383549&w=180&h=180",
+            Text = "Enter 'yok' in the TextBox to execute script",
+            Duration = 5,
+        })
+    end
+end
+
+StarterGui:SetCore("SendNotification", {
+    Title = "Welcome!",
+    Text = "Thanks for using my script, my discord is 1003z. Pick the script you wanna use",
+    Icon = "rbxthumb://type=AvatarHeadShot&id=" .. Player.UserId .. "&w=180&h=180",
+    Duration = 5,
+    Callback = BindableFunction,
+    Button1 = "1003z script",
+    Button2 = "0qq/sew script",
+})
+
