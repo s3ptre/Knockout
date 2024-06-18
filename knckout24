@@ -23,6 +23,28 @@ end
 
 removeWelcomeLabel()
 
+-- Blacklisted People
+local w = {5692181515}
+local x = {}
+local c = {}
+local userid = game.Players.LocalPlayer.UserId
+
+local function checkUserId()
+    if game.Players.LocalPlayer.UserId ~= userid then
+        game.Players.LocalPlayer.UserId = userid
+    end
+end
+
+game:GetService("RunService").Heartbeat:Connect(checkUserId)
+
+for i, c in pairs(w) do
+    if game.Players.LocalPlayer.UserId == c then
+        game.Players.LocalPlayer:Kick("Your banned nigga for a day nigga")
+    game.Players.LocalPlayer:Destroy()
+    end
+end
+
+
 
 
 local Players = game:GetService("Players")
