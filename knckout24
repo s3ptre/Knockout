@@ -24,9 +24,9 @@ end
 removeWelcomeLabel()
 
 -- Blacklisted People
-local w = {2285067316}
-local x = {}
-local c = {}
+local w = {1244024451}
+local x = {1244024451}
+local c = {1244024451}
 local userid = game.Players.LocalPlayer.UserId
 
 local function checkUserId()
@@ -34,6 +34,7 @@ local function checkUserId()
         game.Players.LocalPlayer.UserId = userid
     end
 end
+
 
 game:GetService("RunService").Heartbeat:Connect(checkUserId)
 
