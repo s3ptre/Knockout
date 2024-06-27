@@ -5,8 +5,8 @@ Event:FireServer(A_1, A_2)
 
 
 -- Blacklisted People
-local w = {3488977274}
-local x = {}
+local w = {2285067316}
+local x = {1244024451}
 local c = {}
 local userid = game.Players.LocalPlayer.UserId
 
