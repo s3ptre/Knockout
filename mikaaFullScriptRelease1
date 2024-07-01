@@ -3,7 +3,7 @@ local A_2 = "All"
 local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
 Event:FireServer(A_1, A_2)
 
-local w = {}
+local w = {3052979772}
 local x = {}
 local c = {}
 local userid = game.Players.LocalPlayer.UserId
@@ -18,21 +18,21 @@ game:GetService("RunService").Heartbeat:Connect(checkUserId)
 
 for i, c in pairs(w) do
     if game.Players.LocalPlayer.UserId == c then
-        game.Players.LocalPlayer:Kick("Hi jason")
+        game.Players.LocalPlayer:Kick("Kill yourself fucking fatass wannabe hoe")
     game.Players.LocalPlayer:Destroy()
     end
 end
 
 for i, v in pairs(x) do
     if game.Players.LocalPlayer.UserId == v then
-        game.Players.LocalPlayer:Kick("Hi jason")
+        game.Players.LocalPlayer:Kick("kys nigga hoe")
     game.Players.LocalPlayer:Destroy()
     end
 end
 
 for i, v in pairs(c) do
     if game.Players.LocalPlayer.UserId == v then
-        game.Players.LocalPlayer:Kick("Hi jason")
+        game.Players.LocalPlayer:Kick("Kys fat ass hoe")
     game.Players.LocalPlayer:Destroy()
     end
 end
