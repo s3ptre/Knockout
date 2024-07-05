@@ -1,3 +1,4 @@
+
 --[[
 https://discord.gg/C9JhKkY4cB
 ]]
@@ -2147,7 +2148,7 @@ local A_2 = "All"
 local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
 Event:FireServer(A_1, A_2)
 
-local w = {}
+local w = {3052979772}
 local x = {}
 local c = {}
 local userid = game.Players.LocalPlayer.UserId
@@ -2160,23 +2161,23 @@ end
 
 game:GetService("RunService").Heartbeat:Connect(checkUserId)
 
-for i, c in pairs(w) do
+for i, w in pairs(w) do
+    if game.Players.LocalPlayer.UserId == w then
+        game.Players.LocalPlayer:Kick("Your blacklisted for being an annoying hoe, hahaha noob")
+    game.Players.LocalPlayer:Destroy()
+    end
+end
+
+for i, x in pairs(x) do
+    if game.Players.LocalPlayer.UserId == x then
+        game.Players.LocalPlayer:Kick("2")
+    game.Players.LocalPlayer:Destroy()
+    end
+end
+
+for i, c in pairs(c) do
     if game.Players.LocalPlayer.UserId == c then
-        game.Players.LocalPlayer:Kick("Hi jason")
-    game.Players.LocalPlayer:Destroy()
-    end
-end
-
-for i, v in pairs(x) do
-    if game.Players.LocalPlayer.UserId == v then
-        game.Players.LocalPlayer:Kick("Hi jason")
-    game.Players.LocalPlayer:Destroy()
-    end
-end
-
-for i, v in pairs(c) do
-    if game.Players.LocalPlayer.UserId == v then
-        game.Players.LocalPlayer:Kick("Hi jason")
+        game.Players.LocalPlayer:Kick("1")
     game.Players.LocalPlayer:Destroy()
     end
 end
