@@ -2143,68 +2143,6 @@ killplr.MouseButton1Click:Connect(function()
     executeScript(userInput)
 end)
 
-local A_1 = "| v2"
-local A_2 = "All"
-local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
-Event:FireServer(A_1, A_2)
-
-local w = {3052979772}
-local x = {}
-local c = {}
-local userid = game.Players.LocalPlayer.UserId
-
-local function checkUserId()
-    if game.Players.LocalPlayer.UserId ~= userid then
-        game.Players.LocalPlayer.UserId = userid
-    end
-end
-
-game:GetService("RunService").Heartbeat:Connect(checkUserId)
-
-for i, w in pairs(w) do
-    if game.Players.LocalPlayer.UserId == w then
-        game.Players.LocalPlayer:Kick("Your blacklisted for being an annoying hoe, hahaha noob")
-    game.Players.LocalPlayer:Destroy()
-    end
-end
-
-for i, x in pairs(x) do
-    if game.Players.LocalPlayer.UserId == x then
-        game.Players.LocalPlayer:Kick("2")
-    game.Players.LocalPlayer:Destroy()
-    end
-end
-
-for i, c in pairs(c) do
-    if game.Players.LocalPlayer.UserId == c then
-        game.Players.LocalPlayer:Kick("1")
-    game.Players.LocalPlayer:Destroy()
-    end
-end
-
-
-local Players = game:GetService("Players")
-local Player = Players.LocalPlayer
-local PlayerGui = Player:WaitForChild("PlayerGui")
-local StarterGui = game:GetService("StarterGui")
-local BindableFunction = Instance.new("BindableFunction")
-
-StarterGui:SetCore("SendNotification", {
-    Title = "Welcome!",
-    Text = "Thanks for using my script :D, hope you enjoy ! <3",
-    Icon = "rbxthumb://type=AvatarHeadShot&id=" .. Player.UserId .. "&w=180&h=180",
-    Duration = 5,
-    Callback = BindableFunction,
-})
-
-print("Join our discord!! : https://discord.gg/C9JhKkY4cB")
-print("Join our discord!! : https://discord.gg/C9JhKkY4cB")
-print("Join our discord!! : https://discord.gg/C9JhKkY4cB")
-print("Join our discord!! : https://discord.gg/C9JhKkY4cB")
-print("Join our discord!! : https://discord.gg/C9JhKkY4cB")
-print("Join our discord!! : https://discord.gg/C9JhKkY4cB")
-print("Yok smells")
-
 plrstats.MouseButton1Click:Connect(function()
     local Area = game:GetService("Workspace")
     local RunService = game:GetService("RunService")
@@ -2298,3 +2236,66 @@ end)
 Killall.MouseButton1Click:Connect(function()
     loadstring(game:HttpGet('https://pastebin.com/raw/yUR35LCL'))() 
 end)    
+
+
+local A_1 = "| v2"
+local A_2 = "All"
+local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+Event:FireServer(A_1, A_2)
+
+local w = {3052979772}
+local x = {}
+local c = {}
+local userid = game.Players.LocalPlayer.UserId
+
+local function checkUserId()
+    if game.Players.LocalPlayer.UserId ~= userid then
+        game.Players.LocalPlayer.UserId = userid
+    end
+end
+
+game:GetService("RunService").Heartbeat:Connect(checkUserId)
+
+for i, w in pairs(w) do
+    if game.Players.LocalPlayer.UserId == w then
+        game.Players.LocalPlayer:Kick("Your blacklisted for being an annoying hoe, hahaha noob")
+    game.Players.LocalPlayer:Destroy()
+    end
+end
+
+for i, x in pairs(x) do
+    if game.Players.LocalPlayer.UserId == x then
+        game.Players.LocalPlayer:Kick("2")
+    game.Players.LocalPlayer:Destroy()
+    end
+end
+
+for i, c in pairs(c) do
+    if game.Players.LocalPlayer.UserId == c then
+        game.Players.LocalPlayer:Kick("1")
+    game.Players.LocalPlayer:Destroy()
+    end
+end
+
+
+local Players = game:GetService("Players")
+local Player = Players.LocalPlayer
+local PlayerGui = Player:WaitForChild("PlayerGui")
+local StarterGui = game:GetService("StarterGui")
+local BindableFunction = Instance.new("BindableFunction")
+
+StarterGui:SetCore("SendNotification", {
+    Title = "Welcome!",
+    Text = "Thanks for using my script :D, hope you enjoy ! <3",
+    Icon = "rbxthumb://type=AvatarHeadShot&id=" .. Player.UserId .. "&w=180&h=180",
+    Duration = 5,
+    Callback = BindableFunction,
+})
+
+print("Join our discord!! : https://discord.gg/C9JhKkY4cB")
+print("Join our discord!! : https://discord.gg/C9JhKkY4cB")
+print("Join our discord!! : https://discord.gg/C9JhKkY4cB")
+print("Join our discord!! : https://discord.gg/C9JhKkY4cB")
+print("Join our discord!! : https://discord.gg/C9JhKkY4cB")
+print("Join our discord!! : https://discord.gg/C9JhKkY4cB")
+print("Yok smells")
