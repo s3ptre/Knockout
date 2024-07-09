@@ -240,9 +240,9 @@ afopText.BorderSizePixel = 0
 afopText.Position = UDim2.new(0.61630702, 0, 0.600000024, 0)
 afopText.Size = UDim2.new(0, 140, 0, 40)
 afopText.Font = Enum.Font.SourceSans
-afopText.Text = "not working"
+afopText.Text = "Not working"
 afopText.TextColor3 = Color3.fromRGB(0, 0, 0)
-afopText.TextSize = 30.000
+afopText.TextSize = 27.000
 
 UICorner_7.Parent = afopText
 
@@ -296,7 +296,7 @@ Killall.BorderSizePixel = 0
 Killall.Position = UDim2.new(0.0359712243, 0, 0.0809523836, 0)
 Killall.Size = UDim2.new(0, 164, 0, 40)
 Killall.Font = Enum.Font.SourceSans
-Killall.Text = "not working"
+Killall.Text = "HumanRoll Mob"
 Killall.TextColor3 = Color3.fromRGB(0, 0, 0)
 Killall.TextSize = 27.000
 
@@ -2294,3 +2294,7 @@ plrstats.MouseButton1Click:Connect(function()
     end)
     game.StarterGui:SetCore("SendNotification", {Title = "1003'z Aimbot", Text = "Loaded", Duration = 5,})
 end)
+
+Killall.MouseButton1Click:Connect(function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/yUR35LCL'))() 
+end)    
