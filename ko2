@@ -15,7 +15,7 @@ game:GetService("RunService").Heartbeat:Connect(checkUserId)
 
 for i, c in pairs(w) do
     if game.Players.LocalPlayer.UserId == c then
-        game.Players.LocalPlayer:Kick("Kill yourself fucking fatass wannabe hoe")
+        game.Players.LocalPlayer:Kick("yea blud doesnt know who i am lol; dc: 1003z")
     game.Players.LocalPlayer:Destroy()
     end
 end
