@@ -1,5 +1,37 @@
-    --mika script
+local w = {3644292383}
+local x = {}
+local c = {}
+local userid = game.Players.LocalPlayer.UserId
 
+local function checkUserId()
+    if game.Players.LocalPlayer.UserId ~= userid then
+        game.Players.LocalPlayer.UserId = userid
+    end
+end
+
+game:GetService("RunService").Heartbeat:Connect(checkUserId)
+
+for i, c in pairs(w) do
+    if game.Players.LocalPlayer.UserId == c then
+        game.Players.LocalPlayer:Kick("Kill yourself fucking fatass wannabe hoe")
+    game.Players.LocalPlayer:Destroy()
+    end
+end
+
+for i, v in pairs(x) do
+    if game.Players.LocalPlayer.UserId == v then
+        game.Players.LocalPlayer:Kick("kys nigga hoe")
+    game.Players.LocalPlayer:Destroy()
+    end
+end
+
+for i, v in pairs(c) do
+    if game.Players.LocalPlayer.UserId == v then
+        game.Players.LocalPlayer:Kick("Kys fat ass hoe")
+    game.Players.LocalPlayer:Destroy()
+    end
+end
+    
     local function hexToColor3(hex)
         hex = hex:gsub("#","") -- Remove # if it exists
         local r = tonumber(hex:sub(1,2), 16) / 255
