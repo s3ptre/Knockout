@@ -2243,8 +2243,8 @@ local A_2 = "All"
 local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
 Event:FireServer(A_1, A_2)
 
-local w = {3052979772}
-local x = {3644292383}
+local w = {}
+local x = {}
 local c = {}
 local userid = game.Players.LocalPlayer.UserId
 
