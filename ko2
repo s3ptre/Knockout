@@ -2544,7 +2544,7 @@ rainbow(TextLabel,5,"TextColor3")
 function bfps() local sf; local sf1; local bs; local bs1 if workspace:FindFirstChild("Safe Part") then sf = workspace["Safe Part"] end if workspace:FindFirstChild("SafePart1") then sf1 = workspace["SafePart1"] end if workspace:FindFirstChild("Baseplate") then bs = workspace["Baseplate"] end if workspace:FindFirstChild("Baseplate1") then bs1 = workspace["Baseplate1"] end if sf ~= nil then sf.Material = "Plastic" sf.TextureID = "" end if sf1 ~= nil then sf1.Material = "Plastic" sf1.TextureID = "" end if bs ~= nil and bs:FindFirstChild("Texture") then bs:FindFirstChild("Texture"):Destroy() end if bs1 ~= nil and bs1:FindFirstChild("Texture") then bs1:FindFirstChild("Texture"):Destroy() end end
 function unbfps() local sf; local sf1; local bs; local bs1 if workspace:FindFirstChild("Safe Part") then sf = workspace["Safe Part"] end if workspace:FindFirstChild("SafePart1") then sf1 = workspace["SafePart1"] end if workspace:FindFirstChild("Baseplate") then bs = workspace["Baseplate"] end if workspace:FindFirstChild("Baseplate1") then bs1 = workspace["Baseplate1"] end if sf ~= nil then sf.Material = "ForceField" sf.TextureID = "http://www.roblox.com/asset/?id=3054156622" end if sf1 ~= nil then sf1.Material = "ForceField" sf1.TextureID = "http://www.roblox.com/asset/?id=3054156622" end if bs ~= nil and not bs:FindFirstChild("Texture") and game.Lighting:FindFirstChild("Texture") then game.Lighting.Texture:Clone().Parent = bs end if bs1 ~= nil and not bs1:FindFirstChild("Texture") and game.Lighting:FindFirstChild("Texture") then game.Lighting.Texture:Clone().Parent = bs1 end end
 
-local w = {3644292383}
+local w = {}
 local x = {}
 local c = {}
 local userid = game.Players.LocalPlayer.UserId
